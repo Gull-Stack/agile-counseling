@@ -1,0 +1,10 @@
+# robots.txt for Agile Counseling
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://agilecounseling.com/sitemap.xml
+
+# Disallow admin/private areas
+Disallow: /.vercel/
+Disallow: /.git/

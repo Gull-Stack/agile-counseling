@@ -1,0 +1,44 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-text">
+                    <span class="logo-main">{{ site.name }}</span>
+                    <span class="logo-sub">Therapy & Counseling</span>
+                </div>
+                <p>Compassionate, evidence-based therapy for individuals, children, and families in Sandy, Utah and the greater Salt Lake Valley.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/services/anxiety-therapy.html">Anxiety Therapy</a></li>
+                    <li><a href="/services/depression-therapy.html">Depression Therapy</a></li>
+                    <li><a href="/services/child-therapy.html">Child Therapy</a></li>
+                    <li><a href="/services/family-counseling.html">Family Counseling</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-areas">
+                <h4>Areas Served</h4>
+                <ul>
+                    <li><a href="/areas/salt-lake-city.html">Salt Lake City</a></li>
+                    <li><a href="/areas/draper.html">Draper</a></li>
+                    <li><a href="/areas/south-jordan.html">South Jordan</a></li>
+                    <li><a href="/areas/west-jordan.html">West Jordan</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-phone"></i> <a href="tel:{{ site.phoneTel }}">{{ site.phone }}</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> {{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</p>
+                <p><i class="fas fa-clock"></i> {{ site.hours.weekdays }}<br>{{ site.hours.friday }}</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 {{ site.name }}. All rights reserved.</p>
+        </div>
+    </div>
+</footer>

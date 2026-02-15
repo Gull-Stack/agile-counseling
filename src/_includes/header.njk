@@ -1,0 +1,31 @@
+<header class="header" id="header">
+    <div class="container">
+        <nav class="nav">
+            <a class="logo" href="/">
+                <div class="logo-text">
+                    <span class="logo-main">{{ site.name }}</span>
+                    <span class="logo-sub">Therapy & Counseling</span>
+                </div>
+            </a>
+            <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-btn">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/resources.html">Resources</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a class="btn btn-primary nav-cta" href="/contact.html">Request Appointment</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+document.querySelector('.mobile-menu-btn')?.addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.nav-menu').classList.toggle('active');
+    this.setAttribute('aria-expanded', this.classList.contains('active'));
+});
+</script>

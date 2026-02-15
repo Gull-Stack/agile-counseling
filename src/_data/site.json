@@ -1,0 +1,28 @@
+{
+  "name": "Agile Counseling",
+  "tagline": "Compassionate Therapy for Individuals, Children & Families",
+  "phone": "(801) 597-9558",
+  "phoneTel": "8015979558",
+  "email": "candice@agilecounseling.com",
+  "address": {
+    "street": "",
+    "city": "Sandy",
+    "state": "UT",
+    "zip": "84070"
+  },
+  "hours": {
+    "weekdays": "Monday - Thursday: 9:00 AM - 6:00 PM",
+    "friday": "Friday: 9:00 AM - 3:00 PM"
+  },
+  "url": "https://agilecounseling.com",
+  "therapist": {
+    "name": "Candice Gonzalez",
+    "credentials": "LCSW",
+    "title": "Licensed Clinical Social Worker",
+    "experience": "22"
+  },
+  "social": {
+    "facebook": "",
+    "instagram": ""
+  }
+}
