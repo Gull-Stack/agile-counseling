@@ -28,6 +28,12 @@
 
   <!-- Service Pages -->
   <url>
+    <loc>https://agilecounseling.com/services/emdr-therapy/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://agilecounseling.com/services/anxiety-therapy.html</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -59,6 +65,18 @@
   </url>
 
   <!-- Location/Area Pages -->
+  <url>
+    <loc>https://agilecounseling.com/areas/emdr-sandy/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://agilecounseling.com/areas/emdr-draper/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://agilecounseling.com/areas/draper.html</loc>
     <lastmod>2026-02-15</lastmod>
