@@ -1,564 +1,352 @@
-<!DOCTYPE html>
+---
+layout: base.njk
+title: About Candice Gonzalez, LCSW | Therapist in Sandy, UT
+description: Meet Candice Gonzalez, LCSW — a licensed therapist in Sandy, UT with 22 years of clinical experience. Specializing in anxiety, depression, ADHD, LGBTQIA+ affirming care, child therapy & family counseling.
+---
 
-<html lang="en">
-<head>
-<meta charset="utf-8"/><meta content="US-UT" name="geo.region"/><meta content="Sandy" name="geo.placename"/><meta content="40.5650;-111.8850" name="geo.position"/><meta content="40.5650, -111.8850" name="ICBM"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="#1c3d5a" name="theme-color"/>
-<!-- Primary SEO Meta Tags -->
-<title>About Candice Gonzalez, LCSW | Therapist in Sandy, UT | 22 Years Experience | Agile Counseling</title>
-<meta content="Meet Candice Gonzalez, LCSW — a licensed therapist in Sandy, UT with 22 years of clinical experience. Specializing in anxiety, depression, ADHD, LGBTQIA+ affirming care, child therapy &amp; family counseling. Serving Sandy, Salt Lake City, Draper &amp; the Salt Lake Valley." name="description"/>
-<meta content="therapist Sandy UT, about Candice Gonzalez LCSW, licensed clinical social worker Sandy Utah, counselor Sandy UT, LCSW near me Utah, child therapist Sandy UT, family therapist Sandy Utah, LGBTQIA+ affirming therapist Sandy UT, anxiety therapist Salt Lake Valley, depression counselor Draper UT, therapist South Jordan UT, CBT therapist Utah, DBT therapist Sandy" name="keywords"/>
-<meta content="index, follow" name="robots"/>
-<!-- Open Graph -->
-<meta content="website" property="og:type"/>
-<meta content="About Candice Gonzalez, LCSW | Therapist in Sandy, UT | Agile Counseling" property="og:title"/>
-<meta content="Meet Candice Gonzalez, LCSW — licensed therapist in Sandy, UT with 22 years experience specializing in anxiety, depression, ADHD, child therapy &amp; family counseling. Serving the Salt Lake Valley." property="og:description"/>
-<!-- Canonical URL -->
-<link href="https://agilecounseling.com/about.html" rel="canonical"/>
-<!-- Favicon -->
-<link href="images/favicon.png" rel="icon" type="image/png"/><link href="manifest.json" rel="manifest"/>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="preload"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<!-- Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<!-- Main Stylesheet -->
-<link href="css/styles.css" rel="stylesheet"/>
-<!-- Additional About Page Styles -->
 <style>
-    .about-intro {
-      display: grid;
-      grid-template-columns: 1fr 1.5fr;
-      gap: 4rem;
-      align-items: start;
-    }
-
-    .about-image {
-      position: relative;
-    }
-
-    .about-image img {
-      border-radius: 12px;
-      box-shadow: var(--shadow-xl);
-      width: 100%;
-    }
-
-    .about-image-accent {
-      position: absolute;
-      bottom: -20px;
-      right: -20px;
-      width: 200px;
-      height: 200px;
-      background: var(--color-secondary);
-      border-radius: 12px;
-      z-index: -1;
-    }
-
-    .about-content h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .about-content .subtitle {
-      font-size: 1.25rem;
-      color: var(--color-secondary);
-      font-weight: 500;
-      margin-bottom: 1.5rem;
-    }
-
-    .credentials-section {
-      background: var(--color-light-bg);
-    }
-
-    .credentials-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-    }
-
-    .credential-card {
-      background: var(--color-white);
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: var(--shadow-md);
-      text-align: center;
-    }
-
-    .credential-card i {
-      font-size: 3rem;
-      color: var(--color-secondary);
-      margin-bottom: 1rem;
-    }
-
-    .credential-card h3 {
-      font-size: 1.125rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .credential-card p {
-      color: var(--color-text-light);
-      font-size: 0.9375rem;
-      margin-bottom: 0;
-    }
-
-    .education-timeline {
-      position: relative;
-      padding-left: 3rem;
-    }
-
-    .education-timeline::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background: var(--color-secondary);
-    }
-
-    .timeline-item {
-      position: relative;
-      padding-bottom: 2rem;
-    }
-
-    .timeline-item:last-child {
-      padding-bottom: 0;
-    }
-
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -3rem;
-      top: 0.25rem;
-      width: 16px;
-      height: 16px;
-      background: var(--color-secondary);
-      border-radius: 50%;
-      border: 3px solid var(--color-white);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .timeline-item h3 {
-      font-size: 1.125rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .timeline-item .institution {
-      color: var(--color-secondary);
-      font-weight: 500;
-      margin-bottom: 0.25rem;
-    }
-
-    .timeline-item p {
-      color: var(--color-text-light);
-      margin-bottom: 0;
-    }
-
-    .philosophy-section {
-      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-      color: var(--color-white);
-    }
-
-    .philosophy-content {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .philosophy-content h2 {
-      color: var(--color-white);
-    }
-
-    .philosophy-content p {
-      font-size: 1.125rem;
-      opacity: 0.9;
-    }
-
-    .philosophy-points {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-      margin-top: 3rem;
-      text-align: center;
-    }
-
-    .philosophy-point h3 {
-      color: var(--color-secondary);
-      font-size: 1.125rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .philosophy-point p {
-      font-size: 0.9375rem;
-    }
-
-    .memberships-list {
-      display: flex;
-      justify-content: center;
-      align-items: stretch;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-top: 2rem;
-    }
-
-    .membership-item {
-      background: var(--color-white);
-      border: 1px solid #e0e0e0;
-      border-radius: 12px;
-      padding: 1.5rem 2rem;
-      text-align: center;
-      min-width: 200px;
-      max-width: 260px;
-      flex: 1;
-      box-shadow: var(--shadow-sm);
-      transition: all var(--transition-fast);
-    }
-
-    .membership-item:hover {
-      box-shadow: var(--shadow-md);
-      transform: translateY(-2px);
-    }
-
-    .membership-item i {
-      font-size: 2rem;
-      color: var(--color-secondary);
-      margin-bottom: 0.75rem;
-      display: block;
-    }
-
-    .membership-item h4 {
-      font-size: 0.95rem;
-      color: var(--color-primary);
-      margin-bottom: 0;
-    }
-
-    .placeholder-image {
-      border-radius: 12px;
-      box-shadow: var(--shadow-xl);
-      width: 100%;
-    }
-
-    @media (max-width: 992px) {
-      .about-intro {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-
-      .about-image {
-        max-width: 400px;
-        margin: 0 auto;
-      }
-
-      .credentials-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .philosophy-points {
-        grid-template-columns: 1fr;
-      }
-
-      .memberships-list {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .membership-item {
-        max-width: 100%;
-        width: 100%;
-      }
-    }
-  </style>
-<!-- Schema.org Structured Data -->
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Candice Gonzalez",
-  "jobTitle": "Licensed Clinical Social Worker",
-  "honorificSuffix": "LCSW",
-  "description": "Candice Gonzalez, LCSW is a licensed therapist in Sandy, Utah with 22 years of clinical experience specializing in anxiety, depression, ADHD, LGBTQIA+ affirming care, child therapy, and family counseling.",
-  "url": "https://agilecounseling.com/about.html",
-  "knowsAbout": [
-    "Cognitive Behavioral Therapy (CBT)",
-    "Dialectical Behavior Therapy (DBT)",
-    "Art Therapy",
-    "Family Systems Therapy",
-    "Person-Centered Therapy",
-    "Attachment-Based Therapy",
-    "LGBTQIA+ Affirming Care",
-    "Child and Adolescent Therapy",
-    "Anxiety Treatment",
-    "Depression Treatment",
-    "ADHD Treatment",
-    "Trauma-Informed Care"
-  ],
-  "worksFor": {
-    "@type": "CounselingService",
-    "name": "Agile Counseling",
-    "url": "https://agilecounseling.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Sandy",
-      "addressRegion": "UT",
-      "postalCode": "84070",
-      "addressCountry": "US"
-    },
-    "telephone": "(801) 597-9558",
-    "email": "candice@agilecounseling.com",
-    "areaServed": ["Sandy", "Salt Lake City", "Draper", "South Jordan", "West Jordan", "Midvale", "Cottonwood Heights", "Murray", "Riverton", "Herriman"]
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+}
+.about-image { position: relative; }
+.about-image img {
+  border-radius: 12px;
+  box-shadow: var(--shadow-xl);
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center top;
+}
+.about-image-accent {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 200px;
+  height: 200px;
+  background: var(--color-secondary);
+  border-radius: 12px;
+  z-index: -1;
+}
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.about-content .subtitle {
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.credentials-section { background: var(--color-light-bg); }
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.credential-card {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+.credential-card i {
+  font-size: 3rem;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+.credential-card h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.credential-card p {
+  color: var(--color-text-light);
+  font-size: 0.9375rem;
+  margin-bottom: 0;
+}
+.education-timeline {
+  position: relative;
+  padding-left: 3rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-secondary);
+}
+.timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -3rem;
+  top: 0.25rem;
+  width: 16px;
+  height: 16px;
+  background: var(--color-secondary);
+  border-radius: 50%;
+  border: 3px solid var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+.timeline-item h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+.timeline-item .institution {
+  color: var(--color-secondary);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+.timeline-item p {
+  color: var(--color-text-light);
+  margin-bottom: 0;
+}
+.philosophy-section {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: var(--color-white);
+}
+.philosophy-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.philosophy-content h2 { color: var(--color-white); }
+.philosophy-content p {
+  font-size: 1.125rem;
+  opacity: 0.9;
+}
+.philosophy-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+.philosophy-point h3 {
+  color: var(--color-secondary);
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.philosophy-point p { font-size: 0.9375rem; }
+.memberships-list {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.membership-item {
+  background: var(--color-white);
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  min-width: 200px;
+  max-width: 260px;
+  flex: 1;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+.membership-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.membership-item i {
+  font-size: 2rem;
+  color: var(--color-secondary);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+.membership-item h4 {
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
-}</script>
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://agilecounseling.com/"},
-    {"@type": "ListItem", "position": 2, "name": "About", "item": "https://agilecounseling.com/about.html"}
-  ]
-}</script>
-</head>
-<body>
-<!-- Top Bar -->
-<div class="top-bar">
-<div class="container">
-<div class="top-bar-content">
-<div class="top-bar-left">
-<a href="tel:8015979558"><i class="fas fa-phone"></i> (801) 597-9558</a>
-<span class="divider">|</span>
-<a href="mailto:candice@agilecounseling.com"><i class="fas fa-envelope"></i> candice@agilecounseling.com</a>
-</div>
-<div class="top-bar-right">
-</div>
-</div>
-</div>
-</div>
-<!-- Header / Navigation -->
-<header class="header" id="header">
-<div class="container">
-<nav class="nav">
-<a class="logo" href="/">
-<span class="logo-text" style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--color-primary);">Agile Counseling</span>
-<span class="logo-subtitle" style="display: block; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 400; color: var(--color-secondary); letter-spacing: 1px;">Therapy &amp; Counseling</span>
-</a>
-<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-btn">
-<span class="hamburger"></span>
-</button>
-<ul class="nav-menu">
-<li><a href="/">Home</a></li>
-<li><a class="active" href="/about/">About</a></li>
-<li><a href="index.html#services">Services</a></li>
-<li><a href="/resources/">Resources</a></li>
-<li><a href="/contact/">Contact</a></li>
-<li><a class="btn btn-primary nav-cta" href="/contact/">Request Appointment</a></li>
-</ul>
-</nav>
-</div>
-</header>
+  .about-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .credentials-grid { grid-template-columns: 1fr; }
+  .philosophy-points { grid-template-columns: 1fr; }
+  .memberships-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .membership-item {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+</style>
+
 <!-- Page Hero -->
 <section class="page-hero">
-<div class="container">
-<h1>About Candice Gonzalez</h1>
-<nav aria-label="Breadcrumb" class="breadcrumb">
-<a href="/">Home</a>
-<span>/</span>
-<span>About</span>
-</nav>
-</div>
+  <div class="container">
+    <h1>About Candice Gonzalez</h1>
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span>About</span>
+    </nav>
+  </div>
 </section>
+
 <!-- About Intro Section -->
 <section class="section">
-<div class="container">
-<div class="about-intro">
-<div class="about-image">
-<img src="/images/candice-gonzalez.jpg" alt="Candice Gonzalez, LCSW - Licensed Clinical Social Worker" style="width:100%; height:500px; object-fit:cover; object-position:center top; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.1);">
-<div class="about-image-accent"></div>
-</div>
-<div class="about-content">
-<h1>Candice Gonzalez, LCSW</h1>
-<p class="subtitle">Licensed Clinical Social Worker</p>
-<p class="lead">With 22 years of clinical experience, Candice Gonzalez is a trusted therapist in Sandy, Utah dedicated to helping individuals, children, and families navigate life's challenges and find their path to healing. She specializes in anxiety, depression, ADHD, and LGBTQIA+ affirming care, serving clients throughout the Salt Lake Valley including Draper, South Jordan, West Jordan, and Salt Lake City.</p>
-<p>Candice takes a collaborative, integrative approach to therapy, drawing from evidence-based methods including Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), Art Therapy, Family Systems Therapy, Person-Centered Therapy, and Attachment-Based Therapy. She tailors her approach to meet the unique needs of each client, helping them develop new coping strategies.</p>
-<p>Candice is deeply committed to creating a safe, supportive, and nonjudgmental space where clients of all ages and backgrounds feel welcomed and valued. She believes that everyone deserves access to compassionate care and works to ensure that each person who walks through her door feels heard, respected, and empowered to make meaningful changes in their life.</p>
-<a class="btn btn-primary" href="/contact/" style="margin-top: 1rem;">Schedule an Appointment</a>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="about-intro">
+      <div class="about-image">
+        <img src="/images/candice-gonzalez.jpg" alt="Candice Gonzalez, LCSW - Licensed Clinical Social Worker">
+        <div class="about-image-accent"></div>
+      </div>
+      <div class="about-content">
+        <h1>Candice Gonzalez, LCSW</h1>
+        <p class="subtitle">Licensed Clinical Social Worker</p>
+        <p class="lead">With 22 years of clinical experience, Candice Gonzalez is a trusted therapist in Sandy, Utah dedicated to helping individuals, children, and families navigate life's challenges and find their path to healing. She specializes in anxiety, depression, ADHD, and LGBTQIA+ affirming care, serving clients throughout the Salt Lake Valley including Draper, South Jordan, West Jordan, and Salt Lake City.</p>
+        <p>Candice takes a collaborative, integrative approach to therapy, drawing from evidence-based methods including Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), Art Therapy, Family Systems Therapy, Person-Centered Therapy, and Attachment-Based Therapy. She tailors her approach to meet the unique needs of each client, helping them develop new coping strategies.</p>
+        <p>Candice is deeply committed to creating a safe, supportive, and nonjudgmental space where clients of all ages and backgrounds feel welcomed and valued. She believes that everyone deserves access to compassionate care and works to ensure that each person who walks through her door feels heard, respected, and empowered to make meaningful changes in their life.</p>
+        <a class="btn btn-primary" href="/contact/" style="margin-top: 1rem;">Schedule an Appointment</a>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!-- Credentials Section -->
 <section class="credentials-section section" id="credentials">
-<div class="container">
-<div class="section-header text-center">
-<span class="section-label">Qualifications</span>
-<h2>Credentials &amp; Certifications</h2>
-</div>
-<div class="credentials-grid">
-<div class="credential-card">
-<i class="fas fa-certificate"></i>
-<h3>Licensed Clinical Social Worker</h3>
-<p>Licensed in the state of Utah to provide individual, child, and family therapy with advanced clinical training and expertise.</p>
-</div>
-<div class="credential-card">
-<i class="fas fa-brain"></i>
-<h3>Evidence-Based Methods</h3>
-<p>Trained in CBT, DBT, Art Therapy, Family Systems, and other proven therapeutic approaches.</p>
-</div>
-<div class="credential-card">
-<i class="fas fa-clock"></i>
-<h3>22 Years Clinical Experience</h3>
-<p>Nearly two decades of dedicated practice helping individuals, children, and families build resilience and achieve their therapeutic goals.</p>
-</div>
-</div>
-<!-- Education Timeline -->
-<div style="margin-top: 4rem;">
-<h3 style="text-align: center; margin-bottom: 2rem;">Education &amp; Training</h3>
-<div class="education-timeline" style="max-width: 600px; margin: 0 auto;">
-<div class="timeline-item">
-<h3>Master of Social Work (MSW)</h3>
-<p class="institution">Graduate-level clinical social work training</p>
-<p>Advanced coursework in clinical assessment, therapeutic interventions, and social systems theory</p>
-</div>
-<div class="timeline-item">
-<h3>Advanced Clinical Training</h3>
-<p class="institution">Continuing Professional Education</p>
-<p>Ongoing continuing education in evidence-based therapeutic methods and clinical best practices</p>
-</div>
-<div class="timeline-item">
-<h3>CBT &amp; DBT Training</h3>
-<p class="institution">Cognitive Behavioral &amp; Dialectical Behavior Therapy</p>
-<p>Specialized training in evidence-based approaches for anxiety, depression, and emotional regulation</p>
-</div>
-<div class="timeline-item">
-<h3>Trauma-Informed Care Certification</h3>
-<p class="institution">Advanced Trauma Training</p>
-<p>Comprehensive training in trauma-sensitive therapeutic practices for children and adults</p>
-</div>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="section-label">Qualifications</span>
+      <h2>Credentials & Certifications</h2>
+    </div>
+    <div class="credentials-grid">
+      <div class="credential-card">
+        <i class="fas fa-certificate"></i>
+        <h3>Licensed Clinical Social Worker</h3>
+        <p>Licensed in the state of Utah to provide individual, child, and family therapy with advanced clinical training and expertise.</p>
+      </div>
+      <div class="credential-card">
+        <i class="fas fa-brain"></i>
+        <h3>Evidence-Based Methods</h3>
+        <p>Trained in CBT, DBT, Art Therapy, Family Systems, and other proven therapeutic approaches.</p>
+      </div>
+      <div class="credential-card">
+        <i class="fas fa-clock"></i>
+        <h3>22 Years Clinical Experience</h3>
+        <p>Nearly two decades of dedicated practice helping individuals, children, and families build resilience and achieve their therapeutic goals.</p>
+      </div>
+    </div>
+
+    <!-- Education Timeline -->
+    <div style="margin-top: 4rem;">
+      <h3 style="text-align: center; margin-bottom: 2rem;">Education & Training</h3>
+      <div class="education-timeline">
+        <div class="timeline-item">
+          <h3>Master of Social Work (MSW)</h3>
+          <p class="institution">Graduate-level clinical social work training</p>
+          <p>Advanced coursework in clinical assessment, therapeutic interventions, and social systems theory</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Advanced Clinical Training</h3>
+          <p class="institution">Continuing Professional Education</p>
+          <p>Ongoing continuing education in evidence-based therapeutic methods and clinical best practices</p>
+        </div>
+        <div class="timeline-item">
+          <h3>CBT & DBT Training</h3>
+          <p class="institution">Cognitive Behavioral & Dialectical Behavior Therapy</p>
+          <p>Specialized training in evidence-based approaches for anxiety, depression, and emotional regulation</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Trauma-Informed Care Certification</h3>
+          <p class="institution">Advanced Trauma Training</p>
+          <p>Comprehensive training in trauma-sensitive therapeutic practices for children and adults</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!-- Philosophy Section -->
 <section class="philosophy-section section" id="philosophy">
-<div class="container">
-<div class="philosophy-content">
-<span class="section-label light">Our Approach</span>
-<h2>Our Therapeutic Approach</h2>
-<p>At Agile Counseling, we believe that healing happens within the context of a trusting, collaborative relationship. Candice takes a person-centered approach, meeting each client where they are and honoring their unique story, strengths, and goals. By integrating evidence-based techniques with genuine compassion, we help clients of all ages develop the tools they need to thrive.</p>
-<blockquote style="font-style: italic; border-left: 3px solid var(--color-secondary); padding-left: 1.5rem; margin: 1.5rem auto; max-width: 700px; text-align: left; opacity: 0.95;">"I believe that every person, regardless of age or background, deserves a safe space where they can be fully themselves. My goal is to walk alongside my clients on their journey, helping them discover their own resilience and capacity for growth."<br/><span style="display: block; margin-top: 0.5rem; font-style: normal; font-weight: 600;">-- Candice Gonzalez, LCSW</span></blockquote>
-<div class="philosophy-points">
-<div class="philosophy-point">
-<h3>Person-Centered Care</h3>
-<p>Your unique experiences, values, and goals guide every aspect of your treatment. We meet you where you are and move at your pace.</p>
-</div>
-<div class="philosophy-point">
-<h3>Evidence-Based Methods</h3>
-<p>We use proven therapeutic approaches including CBT, DBT, Art Therapy, and more to ensure effective, lasting results.</p>
-</div>
-<div class="philosophy-point">
-<h3>Holistic Approach</h3>
-<p>We address the whole person -- mind, body, and relationships -- recognizing that true healing involves every aspect of your life.</p>
-</div>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="philosophy-content">
+      <span class="section-label light">Our Approach</span>
+      <h2>Our Therapeutic Approach</h2>
+      <p>At Agile Counseling, we believe that healing happens within the context of a trusting, collaborative relationship. Candice takes a person-centered approach, meeting each client where they are and honoring their unique story, strengths, and goals. By integrating evidence-based techniques with genuine compassion, we help clients of all ages develop the tools they need to thrive.</p>
+      <blockquote style="font-style: italic; border-left: 3px solid var(--color-secondary); padding-left: 1.5rem; margin: 1.5rem auto; max-width: 700px; text-align: left; opacity: 0.95;">"I believe that every person, regardless of age or background, deserves a safe space where they can be fully themselves. My goal is to walk alongside my clients on their journey, helping them discover their own resilience and capacity for growth."<br/><span style="display: block; margin-top: 0.5rem; font-style: normal; font-weight: 600;">— Candice Gonzalez, LCSW</span></blockquote>
+      <div class="philosophy-points">
+        <div class="philosophy-point">
+          <h3>Person-Centered Care</h3>
+          <p>Your unique experiences, values, and goals guide every aspect of your treatment. We meet you where you are and move at your pace.</p>
+        </div>
+        <div class="philosophy-point">
+          <h3>Evidence-Based Methods</h3>
+          <p>We use proven therapeutic approaches including CBT, DBT, Art Therapy, and more to ensure effective, lasting results.</p>
+        </div>
+        <div class="philosophy-point">
+          <h3>Holistic Approach</h3>
+          <p>We address the whole person — mind, body, and relationships — recognizing that true healing involves every aspect of your life.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!-- Memberships Section -->
 <section class="section">
-<div class="container">
-<div class="section-header text-center">
-<span class="section-label">Professional Memberships</span>
-<h2>Professional Affiliations</h2>
-<p class="section-subtitle">Candice Gonzalez maintains active memberships in leading professional organizations, ensuring the highest standards of clinical practice and continuing education.</p>
-</div>
-<div class="memberships-list">
-<div class="membership-item">
-<i class="fas fa-users"></i>
-<h4>National Association of Social Workers (NASW)</h4>
-</div>
-<div class="membership-item">
-<i class="fas fa-heart"></i>
-<h4>American Association for Marriage and Family Therapy (AAMFT)</h4>
-</div>
-<div class="membership-item">
-<i class="fas fa-hand-holding-heart"></i>
-<h4>Utah Chapter NASW</h4>
-</div>
-<div class="membership-item">
-<i class="fas fa-brain"></i>
-<h4>American Professional Society on the Abuse of Children (APSAC)</h4>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="section-label">Professional Memberships</span>
+      <h2>Professional Affiliations</h2>
+      <p class="section-subtitle">Candice Gonzalez maintains active memberships in leading professional organizations, ensuring the highest standards of clinical practice and continuing education.</p>
+    </div>
+    <div class="memberships-list">
+      <div class="membership-item">
+        <i class="fas fa-users"></i>
+        <h4>National Association of Social Workers (NASW)</h4>
+      </div>
+      <div class="membership-item">
+        <i class="fas fa-heart"></i>
+        <h4>American Association for Marriage and Family Therapy (AAMFT)</h4>
+      </div>
+      <div class="membership-item">
+        <i class="fas fa-hand-holding-heart"></i>
+        <h4>Utah Chapter NASW</h4>
+      </div>
+      <div class="membership-item">
+        <i class="fas fa-brain"></i>
+        <h4>American Professional Society on the Abuse of Children (APSAC)</h4>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!-- CTA Section -->
 <section class="cta section">
-<div class="container">
-<div class="cta-content text-center">
-<h2>Ready to Meet Candice Gonzalez?</h2>
-<p>Take the first step toward healing and growth. Schedule your appointment today and discover how therapy can help you and your family thrive.</p>
-<div class="cta-buttons">
-<a class="btn btn-primary btn-lg" href="/contact/">Request Appointment</a>
-<a class="btn btn-outline-light btn-lg" href="tel:8015979558"><i class="fas fa-phone"></i> (801) 597-9558</a>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="cta-content text-center">
+      <h2>Ready to Meet Candice Gonzalez?</h2>
+      <p>Take the first step toward healing and growth. Schedule your appointment today and discover how therapy can help you and your family thrive.</p>
+      <div class="cta-buttons">
+        <a class="btn btn-primary btn-lg" href="/contact/">Request Appointment</a>
+        <a class="btn btn-outline-light btn-lg" href="tel:8015979558"><i class="fas fa-phone"></i> (801) 597-9558</a>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Footer -->
-<footer class="footer">
-<div class="container">
-<div class="footer-grid">
-<div class="footer-about">
-<a class="footer-logo" href="/">
-<span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--color-white);">Agile Counseling</span>
-<span style="display: block; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 400; color: var(--color-secondary); letter-spacing: 1px;">Therapy &amp; Counseling</span>
-</a>
-<p>The care you deserve. Licensed therapy and counseling services in Sandy, Utah — serving the greater Salt Lake Valley.</p>
-</div>
-<div class="footer-links">
-<h4>Quick Links</h4>
-<ul>
-<li><a href="/about/">About Candice Gonzalez</a></li>
-<li><a href="index.html#services">Services</a></li>
-<li><a href="/resources/">Resources</a></li>
-<li><a href="/contact/">Contact Us</a></li>
-</ul>
-</div>
-<div class="footer-links">
-<h4>Services</h4>
-<ul>
-<li><a href="index.html#services">Individual Therapy</a></li>
-<li><a href="index.html#services">Child &amp; Adolescent Therapy</a></li>
-<li><a href="index.html#services">Family Counseling</a></li>
-<li><a href="index.html#services">Child &amp; Teen Therapy</a></li>
-<li><a href="index.html#services">LGBTQIA+ Affirming Care</a></li>
-</ul>
-</div>
-<div class="footer-contact">
-<h4>Contact Us</h4>
-<address>
-<p><i class="fas fa-map-marker-alt"></i> Sandy, UT 84070</p>
-<p><i class="fas fa-phone"></i> <a href="tel:8015979558">(801) 597-9558</a></p>
-<p><i class="fas fa-envelope"></i> <a href="mailto:candice@agilecounseling.com">candice@agilecounseling.com</a></p>
-</address>
-</div>
-</div>
-<div class="footer-bottom">
-<div class="footer-bottom-content">
-<p>&copy; <span id="currentYear"></span> Agile Counseling. All Rights Reserved.</p>
-<ul class="footer-legal">
-<li><a href="privacy-policy.html">Privacy Policy</a></li>
-<li><a href="terms.html">Terms of Service</a></li>
-</ul>
-</div>
-<p class="disclaimer">The information on this website is for general information purposes only and is not a substitute for professional mental health treatment. Please consult with a licensed therapist for personalized recommendations.</p>
-</div>
-</div>
-</footer>
-<!-- Back to Top -->
-<a aria-label="Back to top" class="back-to-top" href="#">
-<i class="fas fa-chevron-up"></i>
-</a>
-<!-- Scripts -->
-<script src="config.js"></script>
-<script src="js/main.js"></script>
-</body>
-</html>
