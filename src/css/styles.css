@@ -210,7 +210,7 @@ p {
 
 .btn-primary {
   background-color: var(--color-secondary);
-  color: var(--color-primary);
+  color: var(--color-white);
   border-color: var(--color-secondary);
 }
 
