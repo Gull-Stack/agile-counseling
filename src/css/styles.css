@@ -452,6 +452,8 @@ p {
 
 .nav-cta {
   margin-left: var(--spacing-sm);
+  background-color: var(--color-secondary) !important;
+  color: var(--color-white) !important;
 }
 
 /* Mobile Menu */
