@@ -1,450 +1,328 @@
-<!DOCTYPE html>
+---
+layout: base.njk
+title: Contact Agile Counseling | Schedule Therapy in Sandy, UT
+description: Schedule your therapy appointment at Agile Counseling in Sandy, UT. Candice Gonzalez, LCSW offers anxiety, depression, child & family therapy. Call (801) 597-9558.
+---
 
-<html lang="en">
-<head>
-<meta charset="utf-8"/><meta content="US-UT" name="geo.region"/><meta content="Sandy" name="geo.placename"/><meta content="40.5650;-111.8850" name="geo.position"/><meta content="40.5650, -111.8850" name="ICBM"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="#1c3d5a" name="theme-color"/>
-<!-- Primary SEO Meta Tags -->
-<title>Contact Agile Counseling Sandy, UT | Schedule Therapy Appointment | (801) 597-9558</title>
-<meta content="Schedule your therapy appointment at Agile Counseling in Sandy, UT. Candice Gonzalez, LCSW offers anxiety, depression, child &amp; family therapy. Serving Sandy, Salt Lake City, Draper &amp; the Salt Lake Valley. Call (801) 597-9558 or request online." name="description"/>
-<meta content="schedule therapy appointment Sandy UT, contact therapist Sandy Utah, therapist near me Sandy UT, counseling appointment Salt Lake Valley, book therapy session Utah, LCSW Sandy UT phone number, Agile Counseling contact, therapy intake Sandy Utah, telehealth appointment Utah" name="keywords"/>
-<meta content="index, follow" name="robots"/>
-<!-- Open Graph -->
-<meta content="website" property="og:type"/>
-<meta content="Contact Agile Counseling | Schedule Therapy in Sandy, UT | (801) 597-9558" property="og:title"/>
-<meta content="Schedule your therapy appointment with Candice Gonzalez, LCSW in Sandy, UT. Serving Sandy, Salt Lake City, Draper, South Jordan &amp; the Salt Lake Valley. Call (801) 597-9558." property="og:description"/>
-<!-- Canonical URL -->
-<link href="https://agilecounseling.com/contact.html" rel="canonical"/>
-<!-- Favicon -->
-<link href="images/favicon.png" rel="icon" type="image/png"/><link href="manifest.json" rel="manifest"/>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="preload"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<!-- Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<!-- Main Stylesheet -->
-<link href="css/styles.css" rel="stylesheet"/>
-<!-- Additional Contact Page Styles -->
 <style>
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-    }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.contact-form-wrapper {
+  background: var(--color-white);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+}
+.contact-form-wrapper h2 { margin-bottom: 0.5rem; }
+.contact-form-wrapper > p { color: var(--color-text-light); margin-bottom: 1.5rem; }
+.form-group { margin-bottom: 1.25rem; }
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--color-gray-300);
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(74, 144, 196, 0.15);
+}
+.form-group textarea { min-height: 120px; resize: vertical; }
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.form-submit { margin-top: 1rem; }
+.form-submit .btn { width: 100%; }
+.contact-info-wrapper h2 { margin-bottom: 1.5rem; }
+.contact-info-card {
+  background: var(--color-light-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+.contact-info-card h3 {
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.contact-info-card h3 i { color: var(--color-secondary); font-size: 1.25rem; }
+.contact-info-card p { margin-bottom: 0.5rem; color: var(--color-text-light); }
+.contact-info-card a { color: var(--color-primary); font-weight: 500; }
+.contact-info-card a:hover { color: var(--color-secondary); }
+.map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+.map-container iframe { width: 100%; height: 300px; border: 0; }
+.virtual-consult-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: var(--color-white);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.virtual-consult-banner h3 { color: var(--color-white); margin-bottom: 0.5rem; }
+.virtual-consult-banner p { opacity: 0.9; margin-bottom: 1rem; }
+.success-message {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  display: none;
+}
+.success-message.show { display: block; }
+.success-message h3 { margin-bottom: 0.5rem; }
+@media (max-width: 992px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 576px) {
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form-wrapper { padding: 1.5rem; }
+}
+</style>
 
-    .contact-form-wrapper {
-      background: var(--color-white);
-      padding: 2.5rem;
-      border-radius: 12px;
-      box-shadow: var(--shadow-lg);
-    }
-
-    .contact-form-wrapper h2 {
-      margin-bottom: 0.5rem;
-    }
-
-    .contact-form-wrapper p {
-      color: var(--color-text-light);
-      margin-bottom: 1.5rem;
-    }
-
-    .form-group {
-      margin-bottom: 1.25rem;
-    }
-
-    .form-group label {
-      display: block;
-      font-weight: 500;
-      margin-bottom: 0.5rem;
-      color: var(--color-primary);
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 0.875rem 1rem;
-      border: 1px solid var(--color-gray-300);
-      border-radius: 6px;
-      font-family: var(--font-body);
-      font-size: 1rem;
-      transition: all var(--transition-fast);
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: var(--color-secondary);
-      box-shadow: 0 0 0 3px rgba(74, 144, 196, 0.15);
-    }
-
-    .form-group textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-
-    .form-submit {
-      margin-top: 1rem;
-    }
-
-    .form-submit .btn {
-      width: 100%;
-    }
-
-    .contact-info-wrapper h2 {
-      margin-bottom: 1.5rem;
-    }
-
-    .contact-info-card {
-      background: var(--color-light-bg);
-      padding: 1.5rem;
-      border-radius: 12px;
-      margin-bottom: 1.5rem;
-    }
-
-    .contact-info-card h3 {
-      font-size: 1.125rem;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 1rem;
-    }
-
-    .contact-info-card h3 i {
-      color: var(--color-secondary);
-      font-size: 1.25rem;
-    }
-
-    .contact-info-card p {
-      margin-bottom: 0.5rem;
-      color: var(--color-text-light);
-    }
-
-    .contact-info-card a {
-      color: var(--color-primary);
-      font-weight: 500;
-    }
-
-    .contact-info-card a:hover {
-      color: var(--color-secondary);
-    }
-
-    .map-container {
-      border-radius: 12px;
-      overflow: hidden;
-      margin-top: 1.5rem;
-      box-shadow: var(--shadow-md);
-    }
-
-    .map-container iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-    }
-
-    .virtual-consult-banner {
-      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-      color: var(--color-white);
-      padding: 2rem;
-      border-radius: 12px;
-      text-align: center;
-      margin-top: 1.5rem;
-    }
-
-    .virtual-consult-banner h3 {
-      color: var(--color-white);
-      margin-bottom: 0.5rem;
-    }
-
-    .virtual-consult-banner p {
-      opacity: 0.9;
-      margin-bottom: 1rem;
-    }
-
-    @media (max-width: 992px) {
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-form-wrapper {
-        padding: 1.5rem;
-      }
-    }
-  </style>
-<!-- Schema.org Structured Data -->
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "name": "Contact Agile Counseling - Sandy, UT Therapist",
-  "description": "Schedule a therapy appointment with Candice Gonzalez, LCSW at Agile Counseling in Sandy, UT. Serving Sandy, Salt Lake City, Draper, South Jordan, and the greater Salt Lake Valley.",
-  "url": "https://agilecounseling.com/contact.html",
-  "mainEntity": {
-    "@type": "CounselingService",
-    "name": "Agile Counseling",
-    "telephone": "(801) 597-9558",
-    "email": "candice@agilecounseling.com",
-    "url": "https://agilecounseling.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Sandy",
-      "addressRegion": "UT",
-      "postalCode": "84070",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 40.5650,
-      "longitude": -111.8850
-    },
-    "openingHoursSpecification": [
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "18:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "15:00"}
-    ],
-    "areaServed": ["Sandy", "Salt Lake City", "Draper", "South Jordan", "West Jordan", "Midvale", "Cottonwood Heights", "Murray"]
-  }
-}</script>
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://agilecounseling.com/"},
-    {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://agilecounseling.com/contact.html"}
-  ]
-}</script>
-</head>
-<body>
-<!-- Top Bar -->
-<div class="top-bar">
-<div class="container">
-<div class="top-bar-content">
-<div class="top-bar-left">
-<a href="tel:8015979558"><i class="fas fa-phone"></i> (801) 597-9558</a>
-<span class="divider">|</span>
-<a href="mailto:candice@agilecounseling.com"><i class="fas fa-envelope"></i> candice@agilecounseling.com</a>
-</div>
-<div class="top-bar-right">
-</div>
-</div>
-</div>
-</div>
-<!-- Header / Navigation -->
-<header class="header" id="header">
-<div class="container">
-<nav class="nav">
-<a class="logo" href="/">Agile Counseling</a>
-<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-btn">
-<span class="hamburger"></span>
-</button>
-<ul class="nav-menu">
-<li><a href="/">Home</a></li>
-<li><a href="/about/">About</a></li>
-<li><a href="index.html#services">Services</a></li>
-<li><a href="/resources/">Resources</a></li>
-<li><a class="active" href="/contact/">Contact</a></li>
-<li><a class="btn btn-primary nav-cta" href="/contact/">Request Appointment</a></li>
-</ul>
-</nav>
-</div>
-</header>
 <!-- Page Hero -->
 <section class="page-hero">
-<div class="container">
-<h1>Contact Us</h1>
-<nav aria-label="Breadcrumb" class="breadcrumb">
-<a href="/">Home</a>
-<span>/</span>
-<span>Contact</span>
-</nav>
-</div>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span>Contact</span>
+    </nav>
+  </div>
 </section>
+
 <!-- Contact Section -->
 <section class="section">
-<div class="container">
-<div class="contact-grid">
-<!-- Contact Form -->
-<div class="contact-form-wrapper">
-<h2>Request an Appointment</h2>
-<p>We would love to hear from you. Fill out the form below and we will reach out to schedule your therapy appointment within 24 hours. We serve clients in Sandy, Salt Lake City, Draper, South Jordan, and throughout the Salt Lake Valley.</p>
-<form action="#" id="contactForm" method="POST">
-<div class="form-row">
-<div class="form-group">
-<label for="firstName">First Name *</label>
-<input id="firstName" name="firstName" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="lastName">Last Name *</label>
-<input id="lastName" name="lastName" required="" type="text"/>
-</div>
-</div>
-<div class="form-row">
-<div class="form-group">
-<label for="email">Email *</label>
-<input id="email" name="email" required="" type="email"/>
-</div>
-<div class="form-group">
-<label for="phone">Phone *</label>
-<input id="phone" name="phone" required="" type="tel"/>
-</div>
-</div>
-<div class="form-group">
-<label for="concern">What Brings You to Therapy?</label>
-<select id="concern" name="concern">
-<option value="">Select a concern...</option>
-<option value="anxiety">Anxiety</option>
-<option value="depression">Depression</option>
-<option value="adhd">ADHD</option>
-<option value="family-conflict">Family Conflict</option>
-<option value="parenting">Parenting</option>
-<option value="lgbtqia-support">LGBTQIA+ Support</option>
-<option value="trauma">Trauma</option>
-<option value="life-transitions">Life Transitions</option>
-<option value="other">Other / Not Sure</option>
-</select>
-</div>
-<div class="form-group">
-<label for="ageGroup">Age Group</label>
-<select id="ageGroup" name="ageGroup">
-<option value="">Select an age group...</option>
-<option value="child">Child (under 12)</option>
-<option value="adolescent">Adolescent (12-17)</option>
-<option value="adult">Adult (18+)</option>
-<option value="family">Family</option>
-</select>
-</div>
-<div class="form-group">
-<label for="preferredContact">Preferred Contact Method</label>
-<select id="preferredContact" name="preferredContact">
-<option value="phone">Phone</option>
-<option value="email">Email</option>
-<option value="text">Text Message</option>
-</select>
-</div>
-<div class="form-group">
-<label for="message">Tell Us More About What You're Looking For</label>
-<textarea id="message" name="message" placeholder="Please share any details about what brings you to therapy or questions you may have..."></textarea>
-</div>
-<div class="form-group">
-<label style="display: flex; align-items: flex-start; gap: 0.5rem; font-weight: normal; cursor: pointer;">
-<input name="consent" required="" style="width: auto; margin-top: 0.25rem;" type="checkbox"/>
-<span style="font-size: 0.875rem; color: var(--color-text-light);">I consent to receiving communications from Agile Counseling. I understand my information will be kept confidential per HIPAA guidelines.</span>
-</label>
-</div>
-<div class="form-submit">
-<button class="btn btn-primary btn-lg" type="submit">Request Appointment</button>
-</div>
-</form>
-</div>
-<!-- Contact Info -->
-<div class="contact-info-wrapper">
-<h2>Get In Touch</h2>
-<div class="contact-info-card">
-<h3><i class="fas fa-map-marker-alt"></i> Our Location</h3>
-<p><strong>Agile Counseling</strong></p>
-<p>45 W 9000 S, Ste 1<br>Sandy, UT 84070</p>
-<p style="margin-top: 0.75rem;"><a href="https://maps.google.com/?q=Sandy+UT+84070" rel="noopener" target="_blank">Get Directions <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i></a></p>
-</div>
-<div class="contact-info-card">
-<h3><i class="fas fa-phone"></i> Phone</h3>
-<p><a href="tel:8015979558">(801) 597-9558</a></p>
-<p style="font-size: 0.875rem;">Available during office hours</p>
-</div>
-<div class="contact-info-card">
-<h3><i class="fas fa-envelope"></i> Email</h3>
-<p><a href="mailto:candice@agilecounseling.com">candice@agilecounseling.com</a></p>
-<p style="font-size: 0.875rem;">We respond within 24 hours</p>
-</div>
-<div class="contact-info-card">
-<h3><i class="fas fa-clock"></i> Office Hours</h3>
-<p>Monday - Thursday: 9:00 AM - 6:00 PM</p>
-<p>Friday: 9:00 AM - 3:00 PM</p>
-<p>Saturday - Sunday: Closed</p>
-</div>
-<div class="map-container">
-<iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24248.0!2d-111.8850!3d40.5650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875262e48b2a3c91%3A0x2bdf6e5e5b3e3e8a!2sSandy%2C+UT+84070!5e0!3m2!1sen!2sus!4v1706000000000" title="Agile Counseling Location - Sandy UT"></iframe>
-</div>
-<div class="virtual-consult-banner">
-<h3><i class="fas fa-video"></i> Telehealth Sessions Available</h3>
-<p>Can't make it to our office? We offer secure telehealth sessions for your convenience.</p>
-<a class="btn btn-outline-light" href="/contact/">Schedule Telehealth Session</a>
-</div>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper">
+        <h2>Request an Appointment</h2>
+        <p>Fill out the form below and we will reach out within 24 hours to schedule your therapy appointment.</p>
+        
+        <div id="successMessage" class="success-message">
+          <h3>✓ Thank You!</h3>
+          <p>Your message has been received. We'll contact you within 24 hours to schedule your appointment.</p>
+        </div>
+        
+        <form id="contactForm">
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="concern">What Brings You to Therapy?</label>
+            <select id="concern" name="concern">
+              <option value="">Select a concern...</option>
+              <option value="Anxiety">Anxiety</option>
+              <option value="Depression">Depression</option>
+              <option value="ADHD">ADHD</option>
+              <option value="Family Conflict">Family Conflict</option>
+              <option value="Parenting">Parenting</option>
+              <option value="LGBTQIA+ Support">LGBTQIA+ Support</option>
+              <option value="Trauma/EMDR">Trauma / EMDR</option>
+              <option value="Life Transitions">Life Transitions</option>
+              <option value="Other">Other / Not Sure</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="ageGroup">Who is Seeking Therapy?</label>
+            <select id="ageGroup" name="ageGroup">
+              <option value="">Select...</option>
+              <option value="Child (under 12)">Child (under 12)</option>
+              <option value="Adolescent (12-17)">Adolescent (12-17)</option>
+              <option value="Adult (18+)">Adult (18+)</option>
+              <option value="Family">Family</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="preferredContact">Preferred Contact Method</label>
+            <select id="preferredContact" name="preferredContact">
+              <option value="Phone">Phone</option>
+              <option value="Email">Email</option>
+              <option value="Text">Text Message</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Tell Us More (Optional)</label>
+            <textarea id="message" name="message" placeholder="Share any details about what brings you to therapy or questions you may have..."></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label style="display: flex; align-items: flex-start; gap: 0.5rem; font-weight: normal; cursor: pointer;">
+              <input type="checkbox" name="consent" required style="width: auto; margin-top: 0.25rem;">
+              <span style="font-size: 0.875rem; color: var(--color-text-light);">I consent to receiving communications from Agile Counseling. My information will be kept confidential.</span>
+            </label>
+          </div>
+          
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary btn-lg">Request Appointment</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info-wrapper">
+        <h2>Get In Touch</h2>
+        
+        <div class="contact-info-card">
+          <h3><i class="fas fa-map-marker-alt"></i> Our Location</h3>
+          <p><strong>Agile Counseling</strong></p>
+          <p>45 W 9000 S, Ste 1<br>Sandy, UT 84070</p>
+          <p style="margin-top: 0.75rem;">
+            <a href="https://maps.google.com/?q=45+W+9000+S+Sandy+UT+84070" target="_blank" rel="noopener">
+              Get Directions <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i>
+            </a>
+          </p>
+        </div>
+        
+        <div class="contact-info-card">
+          <h3><i class="fas fa-phone"></i> Phone</h3>
+          <p><a href="tel:8015979558">(801) 597-9558</a></p>
+          <p style="font-size: 0.875rem;">Available during office hours</p>
+        </div>
+        
+        <div class="contact-info-card">
+          <h3><i class="fas fa-envelope"></i> Email</h3>
+          <p><a href="mailto:candice@agilecounseling.com">candice@agilecounseling.com</a></p>
+          <p style="font-size: 0.875rem;">We respond within 24 hours</p>
+        </div>
+        
+        <div class="contact-info-card">
+          <h3><i class="fas fa-clock"></i> Office Hours</h3>
+          <p>Monday - Thursday: 9:00 AM - 6:00 PM</p>
+          <p>Friday: 9:00 AM - 3:00 PM</p>
+          <p>Saturday - Sunday: Closed</p>
+        </div>
+        
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.8!2d-111.888!3d40.567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDM0JzAxLjIiTiAxMTHCsDUzJzE2LjgiVw!5e0!3m2!1sen!2sus!4v1" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Agile Counseling Location">
+          </iframe>
+        </div>
+        
+        <div class="virtual-consult-banner">
+          <h3><i class="fas fa-video"></i> Telehealth Available</h3>
+          <p>Can't make it to our office? We offer secure video sessions for your convenience.</p>
+          <a href="tel:8015979558" class="btn btn-outline-light">Call to Schedule</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Footer -->
-<footer class="footer">
-<div class="container">
-<div class="footer-grid">
-<div class="footer-about">
-<a class="footer-logo" href="/">Agile Counseling</a>
-<p>Compassionate therapy for individuals, children, and families in Sandy, Utah — serving the greater Salt Lake Valley including Salt Lake City, Draper, South Jordan &amp; surrounding communities.</p>
-<div class="footer-social">
-</div>
-</div>
-<div class="footer-links">
-<h4>Quick Links</h4>
-<ul>
-<li><a href="/about/">About Candice Gonzalez</a></li>
-<li><a href="index.html#services">Services</a></li>
-<li><a href="/resources/">Resources</a></li>
-<li><a href="/contact/">Contact Us</a></li>
-</ul>
-</div>
-<div class="footer-links">
-<h4>Services</h4>
-<ul>
-<li><a href="index.html#services">Anxiety</a></li>
-<li><a href="index.html#services">Depression</a></li>
-<li><a href="index.html#services">Child & Teen Therapy</a></li>
-<li><a href="index.html#services">Family Counseling</a></li>
-</ul>
-</div>
-<div class="footer-contact">
-<h4>Contact Us</h4>
-<address>
-<p><i class="fas fa-map-marker-alt"></i> 45 W 9000 S, Ste 1, Sandy, UT 84070</p>
-<p><i class="fas fa-phone"></i> <a href="tel:8015979558">(801) 597-9558</a></p>
-<p><i class="fas fa-envelope"></i> <a href="mailto:candice@agilecounseling.com">candice@agilecounseling.com</a></p>
-</address>
-<div class="footer-hours">
-<p><strong>Office Hours:</strong></p>
-<p>Mon - Thu: 9:00 AM - 6:00 PM</p>
-<p>Fri: 9:00 AM - 3:00 PM</p>
-</div>
-</div>
-</div>
-<div class="footer-bottom">
-<div class="footer-bottom-content">
-<p>&copy; <span id="currentYear"></span> Agile Counseling. All Rights Reserved.</p>
-<ul class="footer-legal">
-<li><a href="privacy-policy.html">Privacy Policy</a></li>
-<li><a href="terms.html">Terms of Service</a></li>
-</ul>
-</div>
-<p class="disclaimer">The information on this website is for general information purposes only. Nothing on this site should be taken as therapeutic advice. Please contact us directly for personalized recommendations.</p>
-</div>
-</div>
-</footer>
-<!-- Back to Top -->
-<a aria-label="Back to top" class="back-to-top" href="#">
-<i class="fas fa-chevron-up"></i>
-</a>
-<!-- Scripts -->
-<script src="config.js"></script>
-<script src="js/main.js"></script>
-</body>
-</html>
+
+<!-- CTA Section -->
+<section class="cta section">
+  <div class="container">
+    <div class="cta-content text-center">
+      <h2>Ready to Take the First Step?</h2>
+      <p>Schedule your appointment today and discover how therapy can help you and your family thrive.</p>
+      <div class="cta-buttons">
+        <a href="tel:8015979558" class="btn btn-primary btn-lg"><i class="fas fa-phone"></i> Call (801) 597-9558</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const form = e.target;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalText = submitBtn.textContent;
+  
+  // Disable button and show loading
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending...';
+  
+  // Gather form data
+  const formData = {
+    firstName: form.firstName.value,
+    lastName: form.lastName.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    concern: form.concern.value,
+    ageGroup: form.ageGroup.value,
+    preferredContact: form.preferredContact.value,
+    message: form.message.value,
+  };
+  
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+    
+    const result = await response.json();
+    
+    if (response.ok) {
+      form.style.display = 'none';
+      document.getElementById('successMessage').classList.add('show');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      alert('There was an error submitting your form. Please call us at (801) 597-9558.');
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+    }
+  } catch (error) {
+    alert('There was an error submitting your form. Please call us at (801) 597-9558.');
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalText;
+  }
+});
+</script>
