@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/sitemap.xml");
-  eleventyConfig.addPassthroughCopy({ "src/public": "/" });
+  eleventyConfig.addPassthroughCopy({ "static": "/" });
   eleventyConfig.addPassthroughCopy("src/favicon.svg");
   eleventyConfig.addPassthroughCopy("src/favicon-32.png");
   eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
