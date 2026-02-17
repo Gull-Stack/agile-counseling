@@ -133,6 +133,10 @@ description: Schedule your therapy appointment at Agile Counseling in Sandy, UT.
         </div>
         
         <form id="contactForm">
+          <!-- Honeypot -->
+          <input type="text" name="fax_number" id="fax_number" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+          <!-- Timestamp token (bot detection) -->
+          <input type="hidden" name="_timestamp" id="_timestamp" value="">
           
           <div class="form-row">
             <div class="form-group">
@@ -299,6 +303,8 @@ document.getElementById('contactForm').addEventListener('submit', async function
     ageGroup: form.ageGroup.value,
     preferredContact: form.preferredContact.value,
     message: form.message.value,
+    fax_number: form.fax_number.value,
+    _timestamp: form._timestamp.value
   };
   
   try {
@@ -325,4 +331,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     submitBtn.textContent = originalText;
   }
 });
+
+// Set timestamp on page load (bots that submit too fast get blocked)
+document.getElementById('_timestamp').value = Date.now();
 </script>
