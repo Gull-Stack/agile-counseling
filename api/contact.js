@@ -1,5 +1,9 @@
 // Vercel Serverless Function - Contact Form Handler
-// Sends email via Resend to candice@agilecounseling.com
+// Sends email via SendGrid to candice@agilecounseling.com
+
+const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+const SITE_EMAIL = process.env.SITE_EMAIL || 'candice@agilecounseling.com';
+const FROM_EMAIL = process.env.FROM_EMAIL || 'leads@gullstack.com';
 
 // === SPAM PROTECTION ===
 function isGibberish(text) {
@@ -24,6 +28,24 @@ function looksLikeSpam(data) {
   return false;
 }
 // === END SPAM PROTECTION ===
+
+async function sendEmail({ to, from, fromName, subject, html, replyTo }) {
+  const response = await fetch('https://api.sendgrid.com/v3/mail/send', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${SENDGRID_API_KEY}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      personalizations: [{ to: [{ email: to }] }],
+      from: { email: from, name: fromName || 'Agile Counseling' },
+      reply_to: replyTo ? { email: replyTo } : undefined,
+      subject,
+      content: [{ type: 'text/html', value: html }],
+    }),
+  });
+  return response.ok;
+}
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', 'https://agilecounseling.com');
@@ -71,23 +93,21 @@ export default async function handler(req, res) {
   `;
 
   try {
-    const response = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: { 'Authorization': `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        from: 'Agile Counseling <leads@gullstack.com>',
-        to: ['candice@agilecounseling.com'],
-        reply_to: email,
-        subject: `New Appointment Request: ${firstName} ${lastName}${concern ? ` - ${concern}` : ''}`,
-        html: emailHtml,
-      }),
+    // Send notification to Candice
+    const sent = await sendEmail({
+      to: SITE_EMAIL,
+      from: FROM_EMAIL,
+      fromName: `${firstName} ${lastName} via Agile Counseling`,
+      subject: `New Appointment Request: ${firstName} ${lastName}${concern ? ` - ${concern}` : ''}`,
+      html: emailHtml,
+      replyTo: email,
     });
 
-    const result = await response.json();
-    if (!response.ok) {
-      console.error('Resend error:', result);
+    if (!sent) {
+      console.error('SendGrid delivery failed');
       return res.status(500).json({ error: 'Failed to send email' });
     }
+
     return res.status(200).json({ success: true, message: 'Thank you! We will contact you within 24 hours.' });
   } catch (error) {
     console.error('Error sending email:', error);
