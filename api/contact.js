@@ -29,7 +29,7 @@ function looksLikeSpam(data) {
 }
 // === END SPAM PROTECTION ===
 
-async function sendEmail({ to, from, fromName, subject, html, replyTo }) {
+async function sendEmail({ to, from, fromName, subject, html, replyTo, cc }) {
   const response = await fetch('https://api.sendgrid.com/v3/mail/send', {
     method: 'POST',
     headers: {
@@ -37,7 +37,7 @@ async function sendEmail({ to, from, fromName, subject, html, replyTo }) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      personalizations: [{ to: [{ email: to }] }],
+      personalizations: [{ to: [{ email: to }], ...(cc ? { cc: [{ email: cc }] } : {}) }],
       from: { email: from, name: fromName || 'Agile Counseling' },
       reply_to: replyTo ? { email: replyTo } : undefined,
       subject,
@@ -101,6 +101,7 @@ export default async function handler(req, res) {
       subject: `New Appointment Request: ${firstName} ${lastName}${concern ? ` - ${concern}` : ''}`,
       html: emailHtml,
       replyTo: email,
+      cc: 'bryce@gullstack.com',
     });
 
     if (!sent) {
