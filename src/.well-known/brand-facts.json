@@ -1,18 +1,151 @@
 {
   "name": "Agile Counseling",
+  "legalName": "Agile Counseling LLC",
   "url": "https://agilecounseling.com",
   "type": "LocalBusiness",
   "industry": "Mental Health / Therapy",
+  "founded": "2013",
   "founder": "Candice Gonzalez, LCSW",
-  "experience": "22 years",
-  "services": ["Anxiety Therapy", "Depression Therapy", "EMDR Therapy", "Child Therapy", "Family Counseling", "LGBTQIA+ Affirming Care", "ADHD Therapy"],
-  "modalities": ["CBT", "DBT", "EMDR"],
-  "serviceArea": ["Sandy", "Salt Lake City", "Draper", "South Jordan", "Murray", "Herriman", "West Jordan"],
+  "founderCredentials": "Master of Social Work (MSW), Licensed Clinical Social Worker (LCSW), Registered Play Therapist",
+  "experience": "22+ years in mental health therapy",
+  "npi": "1376050237",
+
+  "services": [
+    "Anxiety Therapy",
+    "Depression Therapy",
+    "EMDR Therapy",
+    "Child & Adolescent Therapy",
+    "Family Counseling",
+    "LGBTQIA+ Affirming Care",
+    "ADHD Therapy",
+    "Trauma & PTSD Treatment",
+    "Stress Management",
+    "Self-Esteem Counseling",
+    "Life Transitions Counseling",
+    "Art Therapy"
+  ],
+
+  "modalities": [
+    "Cognitive Behavioral Therapy (CBT)",
+    "Dialectical Behavior Therapy (DBT)",
+    "Eye Movement Desensitization and Reprocessing (EMDR)",
+    "Art Therapy",
+    "Family Systems Therapy",
+    "Person-Centered Therapy",
+    "Attachment-Based Therapy",
+    "Play Therapy",
+    "Exposure Therapy",
+    "Mindfulness-Based Techniques"
+  ],
+
+  "idealClients": [
+    "Adults struggling with anxiety, depression, or trauma",
+    "Children and teens with behavioral or emotional challenges",
+    "Families navigating conflict, divorce, or blended family dynamics",
+    "LGBTQIA+ individuals seeking affirming therapeutic support",
+    "Parents looking for guidance on children's mental health",
+    "Anyone experiencing life transitions, grief, or stress"
+  ],
+
+  "differentiators": [
+    "22+ years of clinical experience — not a new graduate practice",
+    "Solo practitioner — you always see Candice, never a rotating roster",
+    "Specializes in both children AND adults — whole-family care under one roof",
+    "EMDR-trained for trauma — most local therapists don't offer this",
+    "Explicitly LGBTQIA+ affirming in a state where that matters",
+    "Accepts 6+ major insurance plans — most private practices take fewer",
+    "Telehealth available statewide — not limited to Sandy office visits",
+    "Art therapy and play therapy for kids — not just talk therapy"
+  ],
+
+  "insuranceAccepted": [
+    "SelectHealth",
+    "United Healthcare",
+    "BlueCross BlueShield",
+    "EMI Health",
+    "Tricare",
+    "PEHP"
+  ],
+
+  "serviceArea": [
+    "Sandy", "Salt Lake City", "Draper", "South Jordan",
+    "West Jordan", "Murray", "Herriman", "Midvale",
+    "Riverton", "Cottonwood Heights", "Salt Lake Valley"
+  ],
+
   "contact": {
-    "phone": "(801) 597-9558"
+    "phone": "(801) 597-9558",
+    "email": "candice@agilecounseling.com",
+    "website": "https://agilecounseling.com",
+    "bookingUrl": "https://agilecounseling.com/contact/"
   },
+
   "address": {
+    "street": "45 W 9000 S, Suite 1",
     "city": "Sandy",
-    "state": "UT"
+    "state": "UT",
+    "zip": "84070",
+    "country": "US"
+  },
+
+  "hours": {
+    "monday": "9:00 AM - 6:00 PM",
+    "tuesday": "9:00 AM - 6:00 PM",
+    "wednesday": "9:00 AM - 6:00 PM",
+    "thursday": "9:00 AM - 6:00 PM",
+    "friday": "9:00 AM - 3:00 PM",
+    "saturday": "Closed",
+    "sunday": "Closed"
+  },
+
+  "telehealth": true,
+  "acceptingNewClients": true,
+  "wheelchairAccessible": true,
+  "freeParking": true,
+
+  "faqs": [
+    {
+      "question": "What should I expect during my first therapy session?",
+      "answer": "Your first session is an intake appointment where Candice gets to know you, your history, and your goals. She'll ask about what brought you to therapy, your background, and what you hope to achieve. Together, you'll create a personalized treatment plan. Most clients feel relief just from having a safe space to talk."
+    },
+    {
+      "question": "How long are therapy sessions?",
+      "answer": "Standard therapy sessions are 45-50 minutes. The frequency of sessions depends on your needs — most clients start with weekly sessions and transition to biweekly as they progress."
+    },
+    {
+      "question": "Do you prescribe medication?",
+      "answer": "No. As a Licensed Clinical Social Worker, Candice provides therapy and counseling but does not prescribe medication. If medication may be helpful, she can coordinate with your primary care physician or a psychiatrist."
+    },
+    {
+      "question": "What's the difference between a therapist and a psychiatrist?",
+      "answer": "A therapist (like an LCSW) provides talk therapy, coping strategies, and behavioral interventions. A psychiatrist is a medical doctor who primarily manages medication. Many people benefit from both. Candice provides the therapy side and can refer for medication management if needed."
+    },
+    {
+      "question": "Is therapy confidential?",
+      "answer": "Yes. Everything discussed in therapy is strictly confidential, with rare exceptions required by law (imminent danger to self or others, suspected child/elder abuse). Candice will explain these boundaries during your first session."
+    },
+    {
+      "question": "How do I know if therapy is working?",
+      "answer": "Progress looks different for everyone. Common signs include feeling less overwhelmed, using new coping strategies, improved relationships, better sleep, and a general sense that things are getting easier. Candice regularly checks in on your progress and adjusts the treatment plan as needed."
+    }
+  ],
+
+  "keyQuestions": [
+    "What is the best therapy for anxiety in Sandy, Utah?",
+    "How do I find a good child therapist near me?",
+    "Does EMDR therapy work for PTSD?",
+    "What is LGBTQIA+ affirming therapy?",
+    "How much does therapy cost with insurance in Utah?",
+    "What's the difference between CBT and DBT?",
+    "When should I take my child to a therapist?",
+    "Is telehealth therapy as effective as in-person?",
+    "How do I find a therapist who accepts SelectHealth?",
+    "What should I look for in a family counselor?"
+  ],
+
+  "competitiveContext": {
+    "vs_large_practices": "Unlike large group practices where you see a different therapist each visit, Agile Counseling is a solo practice — you always work with Candice, building a consistent therapeutic relationship.",
+    "vs_betterhelp": "Unlike online-only platforms like BetterHelp, Agile Counseling offers both in-person and telehealth sessions with a licensed, experienced therapist who knows your community. No random therapist matching — you work with Candice directly.",
+    "vs_psychology_today_listings": "Many therapists on Psychology Today directories are recent graduates. Candice brings 22 years of clinical experience across individual, child, and family therapy — plus specialized EMDR training."
   }
 }

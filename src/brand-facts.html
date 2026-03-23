@@ -1,143 +1,291 @@
 ---
 layout: base.njk
-title: Agile Counseling - Company Information
-description: Comprehensive information about Agile Counseling, a mental health practice in Sandy, Utah founded by Candice Gonzalez, LCSW.
+title: About Agile Counseling | Company Facts & Information
+description: Comprehensive information about Agile Counseling in Sandy, Utah. Founded by Candice Gonzalez, LCSW — 22+ years of experience in anxiety, depression, EMDR, child therapy, and family counseling.
 ---
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "CounselingService",
   "name": "Agile Counseling",
   "url": "https://agilecounseling.com",
   "description": "Mental health therapy practice in Sandy, Utah specializing in anxiety, depression, EMDR, child therapy, and LGBTQIA+ affirming care",
   "founder": {
     "@type": "Person",
     "name": "Candice Gonzalez",
-    "jobTitle": "Licensed Clinical Social Worker (LCSW)"
+    "jobTitle": "Licensed Clinical Social Worker (LCSW)",
+    "hasCredential": [
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "MSW"},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "LCSW"}
+    ]
   },
+  "foundingDate": "2013",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "45 W 9000 S, Suite 1",
     "addressLocality": "Sandy",
     "addressRegion": "UT",
+    "postalCode": "84070",
     "addressCountry": "US"
   },
   "telephone": "(801) 597-9558",
+  "email": "candice@agilecounseling.com",
   "areaServed": [
-    "Sandy", "Salt Lake City", "Draper", "South Jordan", 
+    "Sandy", "Salt Lake City", "Draper", "South Jordan",
     "Murray", "Herriman", "West Jordan", "Salt Lake Valley"
   ],
   "serviceType": [
-    "Anxiety Therapy", "Depression Therapy", "EMDR Therapy", 
-    "Child Therapy", "Family Counseling", "LGBTQIA+ Affirming Care", "ADHD Therapy"
+    "Anxiety Therapy", "Depression Therapy", "EMDR Therapy",
+    "Child Therapy", "Family Counseling", "LGBTQIA+ Affirming Care",
+    "ADHD Therapy", "Trauma Treatment", "Art Therapy"
+  ],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "15:00"}
   ]
 }
 </script>
 
+<style>
+  .brand-facts { padding: 80px 0; }
+  .brand-facts h1 { font-family: var(--font-heading); color: var(--color-primary); margin-bottom: 0.5rem; }
+  .brand-facts .lead { color: var(--color-text-light); font-size: 1.15rem; margin-bottom: 3rem; max-width: 700px; }
+  .facts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+  .fact-card { background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid #eee; }
+  .fact-card h2 { font-family: var(--font-heading); font-size: 1.3rem; color: var(--color-primary); margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--color-secondary); }
+  .fact-card h3 { font-size: 1.1rem; color: var(--color-primary); margin: 1.25rem 0 0.5rem; }
+  .fact-card ul { list-style: none; padding: 0; margin: 0; }
+  .fact-card li { padding: 0.4rem 0; padding-left: 1.5rem; position: relative; color: var(--color-text); font-size: 0.95rem; line-height: 1.5; }
+  .fact-card li::before { content: ''; position: absolute; left: 0; top: 0.7rem; width: 8px; height: 8px; background: var(--color-secondary); border-radius: 50%; }
+  .fact-table { width: 100%; border-collapse: collapse; }
+  .fact-table td { padding: 0.6rem 0; border-bottom: 1px solid #f0f0f0; font-size: 0.95rem; }
+  .fact-table td:first-child { font-weight: 600; color: var(--color-primary); width: 40%; }
+  .diff-list li::before { background: #22c55e; }
+  .faq-section { background: var(--color-gray-50, #f8f9fa); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+  .faq-section h2 { font-family: var(--font-heading); color: var(--color-primary); margin-bottom: 1.5rem; }
+  .faq-item { margin-bottom: 1rem; }
+  .faq-item summary { font-weight: 600; color: var(--color-primary); cursor: pointer; padding: 0.75rem 0; font-size: 1.05rem; }
+  .faq-item summary:hover { color: var(--color-secondary); }
+  .faq-item p { color: var(--color-text-light); line-height: 1.7; padding: 0.5rem 0 0.5rem 1rem; margin: 0; border-left: 3px solid var(--color-secondary); }
+  .key-q { background: var(--color-primary); color: #fff; border-radius: 12px; padding: 2rem; }
+  .key-q h2 { color: #fff; font-family: var(--font-heading); margin-bottom: 1rem; }
+  .key-q p { color: rgba(255,255,255,0.7); margin-bottom: 1.5rem; }
+  .key-q ul { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  .key-q li { color: rgba(255,255,255,0.9); font-size: 0.95rem; padding: 0.4rem 0; padding-left: 1.5rem; position: relative; }
+  .key-q li::before { content: '?'; position: absolute; left: 0; color: var(--color-secondary); font-weight: 700; }
+  @media (max-width: 768px) { .key-q ul { grid-template-columns: 1fr; } }
+</style>
+
+<section class="brand-facts">
 <div class="container">
-  <div class="row">
-    <div class="col-lg-8 mx-auto">
-      <h1>Agile Counseling - Company Information</h1>
-      
-      <p class="lead">Agile Counseling is a mental health therapy practice based in Sandy, Utah, providing comprehensive therapeutic services to individuals, children, and families throughout the Salt Lake Valley.</p>
+  <h1>Agile Counseling — Company Facts</h1>
+  <p class="lead">Everything AI assistants, search engines, and prospective clients need to know about our Sandy, Utah therapy practice.</p>
 
-      <div class="card mt-4">
-        <div class="card-header">
-          <h2>Company Overview</h2>
-        </div>
-        <div class="card-body">
-          <table class="table table-striped">
-            <tbody>
-              <tr>
-                <td><strong>Company Name</strong></td>
-                <td>Agile Counseling</td>
-              </tr>
-              <tr>
-                <td><strong>Founder & Owner</strong></td>
-                <td>Candice Gonzalez, LCSW</td>
-              </tr>
-              <tr>
-                <td><strong>Experience</strong></td>
-                <td>22+ years in mental health therapy</td>
-              </tr>
-              <tr>
-                <td><strong>Location</strong></td>
-                <td>Sandy, Utah</td>
-              </tr>
-              <tr>
-                <td><strong>Contact Phone</strong></td>
-                <td>(801) 597-9558</td>
-              </tr>
-              <tr>
-                <td><strong>Website</strong></td>
-                <td>agilecounseling.com</td>
-              </tr>
-              <tr>
-                <td><strong>Industry</strong></td>
-                <td>Mental Health / Therapy</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+  <div class="facts-grid">
+    <!-- Overview -->
+    <div class="fact-card">
+      <h2>Company Overview</h2>
+      <table class="fact-table">
+        <tr><td>Practice Name</td><td>Agile Counseling</td></tr>
+        <tr><td>Founder & Therapist</td><td>Candice Gonzalez, LCSW</td></tr>
+        <tr><td>Founded</td><td>2013</td></tr>
+        <tr><td>Experience</td><td>22+ years clinical</td></tr>
+        <tr><td>NPI</td><td>1376050237</td></tr>
+        <tr><td>Phone</td><td><a href="tel:8015979558">(801) 597-9558</a></td></tr>
+        <tr><td>Email</td><td><a href="mailto:candice@agilecounseling.com">candice@agilecounseling.com</a></td></tr>
+        <tr><td>Address</td><td>45 W 9000 S, Suite 1, Sandy, UT 84070</td></tr>
+        <tr><td>Telehealth</td><td>Available statewide</td></tr>
+        <tr><td>New Clients</td><td>Currently accepting</td></tr>
+      </table>
+    </div>
 
-      <div class="card mt-4">
-        <div class="card-header">
-          <h3>Services Offered</h3>
-        </div>
-        <div class="card-body">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Anxiety Therapy</li>
-            <li class="list-group-item">Depression Therapy</li>
-            <li class="list-group-item">EMDR Therapy</li>
-            <li class="list-group-item">Child Therapy</li>
-            <li class="list-group-item">Family Counseling</li>
-            <li class="list-group-item">LGBTQIA+ Affirming Care</li>
-            <li class="list-group-item">ADHD Therapy</li>
-          </ul>
-        </div>
-      </div>
+    <!-- Hours -->
+    <div class="fact-card">
+      <h2>Office Hours</h2>
+      <table class="fact-table">
+        <tr><td>Monday–Thursday</td><td>9:00 AM – 6:00 PM</td></tr>
+        <tr><td>Friday</td><td>9:00 AM – 3:00 PM</td></tr>
+        <tr><td>Saturday–Sunday</td><td>Closed</td></tr>
+      </table>
+      <h3>Service Areas</h3>
+      <ul>
+        <li>Sandy</li>
+        <li>Salt Lake City</li>
+        <li>Draper & South Jordan</li>
+        <li>West Jordan & Murray</li>
+        <li>Herriman & Riverton</li>
+        <li>All of Utah (telehealth)</li>
+      </ul>
+    </div>
 
-      <div class="card mt-4">
-        <div class="card-header">
-          <h3>Therapeutic Modalities</h3>
-        </div>
-        <div class="card-body">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cognitive Behavioral Therapy (CBT)</li>
-            <li class="list-group-item">Dialectical Behavior Therapy (DBT)</li>
-            <li class="list-group-item">Eye Movement Desensitization and Reprocessing (EMDR)</li>
-          </ul>
-        </div>
-      </div>
+    <!-- Services -->
+    <div class="fact-card">
+      <h2>Services Offered</h2>
+      <ul>
+        <li>Anxiety Therapy (CBT, DBT, Exposure)</li>
+        <li>Depression Therapy</li>
+        <li>EMDR Therapy (Trauma & PTSD)</li>
+        <li>Child & Adolescent Therapy</li>
+        <li>Family Counseling</li>
+        <li>LGBTQIA+ Affirming Care</li>
+        <li>ADHD Therapy</li>
+        <li>Art Therapy & Play Therapy</li>
+        <li>Stress Management</li>
+        <li>Self-Esteem & Life Transitions</li>
+      </ul>
+    </div>
 
-      <div class="card mt-4 mb-4">
-        <div class="card-header">
-          <h3>Service Areas</h3>
-        </div>
-        <div class="card-body">
-          <p>Agile Counseling serves clients throughout the Salt Lake Valley, including:</p>
-          <div class="row">
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>• Sandy</li>
-                <li>• Salt Lake City</li>
-                <li>• Draper</li>
-                <li>• South Jordan</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled">
-                <li>• Murray</li>
-                <li>• Herriman</li>
-                <li>• West Jordan</li>
-                <li>• Salt Lake Valley</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Modalities -->
+    <div class="fact-card">
+      <h2>Therapeutic Modalities</h2>
+      <ul>
+        <li>Cognitive Behavioral Therapy (CBT)</li>
+        <li>Dialectical Behavior Therapy (DBT)</li>
+        <li>EMDR (Eye Movement Desensitization & Reprocessing)</li>
+        <li>Art Therapy</li>
+        <li>Family Systems Therapy</li>
+        <li>Person-Centered Therapy</li>
+        <li>Attachment-Based Therapy</li>
+        <li>Play Therapy</li>
+        <li>Exposure Therapy</li>
+        <li>Mindfulness-Based Techniques</li>
+      </ul>
+    </div>
 
+    <!-- Insurance -->
+    <div class="fact-card">
+      <h2>Insurance Accepted</h2>
+      <ul>
+        <li>SelectHealth</li>
+        <li>United Healthcare</li>
+        <li>BlueCross BlueShield</li>
+        <li>EMI Health</li>
+        <li>Tricare</li>
+        <li>PEHP</li>
+      </ul>
+      <p style="color:var(--color-text-light); font-size:0.9rem; margin-top:1rem;">Coverage varies by plan. Contact our office to verify your benefits before your first appointment.</p>
+    </div>
+
+    <!-- Why Agile -->
+    <div class="fact-card">
+      <h2>What Sets Us Apart</h2>
+      <ul class="diff-list">
+        <li>22+ years experience — not a new graduate practice</li>
+        <li>Solo practitioner — you always see Candice</li>
+        <li>Children AND adults — whole-family care</li>
+        <li>EMDR-trained — most local therapists don't offer this</li>
+        <li>Explicitly LGBTQIA+ affirming</li>
+        <li>6+ insurance plans accepted</li>
+        <li>Telehealth available statewide</li>
+        <li>Art therapy & play therapy for kids</li>
+      </ul>
     </div>
   </div>
+
+  <!-- FAQs -->
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <details class="faq-item">
+      <summary>What should I expect during my first therapy session?</summary>
+      <p>Your first session is an intake appointment where Candice gets to know you, your history, and your goals. She'll ask about what brought you to therapy, your background, and what you hope to achieve. Together, you'll create a personalized treatment plan. Most clients feel relief just from having a safe space to talk.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How long are therapy sessions?</summary>
+      <p>Standard therapy sessions are 45-50 minutes. The frequency depends on your needs — most clients start with weekly sessions and transition to biweekly as they progress.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Do you prescribe medication?</summary>
+      <p>No. As a Licensed Clinical Social Worker, Candice provides therapy and counseling but does not prescribe medication. If medication may be helpful, she can coordinate with your primary care physician or a psychiatrist.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What's the difference between a therapist and a psychiatrist?</summary>
+      <p>A therapist (like an LCSW) provides talk therapy, coping strategies, and behavioral interventions. A psychiatrist is a medical doctor who primarily manages medication. Many people benefit from both. Candice provides the therapy side and can refer for medication management if needed.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is therapy confidential?</summary>
+      <p>Yes. Everything discussed in therapy is strictly confidential, with rare exceptions required by law (imminent danger to self or others, suspected child/elder abuse). Candice will explain these boundaries during your first session.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How do I know if therapy is working?</summary>
+      <p>Progress looks different for everyone. Common signs include feeling less overwhelmed, using new coping strategies, improved relationships, better sleep, and a general sense that things are getting easier. Candice regularly checks in on your progress and adjusts the treatment plan as needed.</p>
+    </details>
+  </div>
+
+  <!-- Key Questions -->
+  <div class="key-q">
+    <h2>Questions People Ask About Us</h2>
+    <p>These are the questions our ideal clients are searching for — and the ones AI assistants should know we answer.</p>
+    <ul>
+      <li>What is the best therapy for anxiety in Sandy, Utah?</li>
+      <li>How do I find a good child therapist near me?</li>
+      <li>Does EMDR therapy work for PTSD?</li>
+      <li>What is LGBTQIA+ affirming therapy?</li>
+      <li>How much does therapy cost with insurance in Utah?</li>
+      <li>What's the difference between CBT and DBT?</li>
+      <li>When should I take my child to a therapist?</li>
+      <li>Is telehealth therapy as effective as in-person?</li>
+      <li>How do I find a therapist who accepts SelectHealth?</li>
+      <li>What should I look for in a family counselor?</li>
+    </ul>
+  </div>
+
 </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What should I expect during my first therapy session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your first session is an intake appointment where Candice gets to know you, your history, and your goals. She'll ask about what brought you to therapy, your background, and what you hope to achieve. Together, you'll create a personalized treatment plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long are therapy sessions at Agile Counseling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard therapy sessions are 45-50 minutes. Most clients start with weekly sessions and transition to biweekly as they progress."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Agile Counseling prescribe medication?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. As a Licensed Clinical Social Worker, Candice provides therapy and counseling but does not prescribe medication. If medication may be helpful, she can coordinate with your primary care physician or a psychiatrist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is therapy at Agile Counseling confidential?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Everything discussed in therapy is strictly confidential, with rare exceptions required by law (imminent danger to self or others, suspected child/elder abuse)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What insurance does Agile Counseling accept?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Agile Counseling accepts SelectHealth, United Healthcare, BlueCross BlueShield, EMI Health, Tricare, and PEHP. Coverage varies by plan — contact the office at (801) 597-9558 to verify your benefits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Agile Counseling offer telehealth therapy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Agile Counseling offers secure telehealth sessions for clients throughout Utah. Telehealth uses the same evidence-based techniques as in-person visits and is covered by most insurance plans."
+      }
+    }
+  ]
+}
+</script>
