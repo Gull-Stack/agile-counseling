@@ -6,21 +6,38 @@ description: Book a therapy session with Candice Gonzalez, LCSW at Agile Counsel
 
 <style>
 .booking-hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  position: relative;
+  background: url('/images/hero-bg.jpg') center/cover no-repeat;
   color: white;
-  padding: 4rem 0 3rem;
+  padding: 6rem 0 5rem;
   text-align: center;
+}
+.booking-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(28,61,90,0.85) 0%, rgba(42,90,130,0.75) 100%);
+  z-index: 1;
+}
+.booking-hero .container {
+  position: relative;
+  z-index: 2;
 }
 .booking-hero h1 {
   font-family: var(--font-heading);
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 .booking-hero .subtitle {
-  font-size: 1.15rem;
-  opacity: 0.9;
+  font-size: 1.2rem;
+  opacity: 0.95;
   max-width: 600px;
   margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
 
 /* Pricing Card */
@@ -232,7 +249,8 @@ description: Book a therapy session with Candice Gonzalez, LCSW at Agile Counsel
 }
 
 @media (max-width: 768px) {
-  .booking-hero h1 { font-size: 1.85rem; }
+  .booking-hero { padding: 4rem 0 3rem; }
+  .booking-hero h1 { font-size: 2rem; }
   .price-current { font-size: 2.75rem; }
   .steps-grid { grid-template-columns: 1fr; gap: 1rem; }
   .booking-card-body { padding: 1.5rem; }
