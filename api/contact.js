@@ -47,6 +47,29 @@ async function sendEmail({ to, from, fromName, subject, html, replyTo, cc }) {
   return response.ok;
 }
 
+// Forward a clean (non-spam) inquiry to the Love Rescue lead pipe so it appears
+// in Candice's therapist console (Practice Health → Recent inquiries + funnel).
+// Best-effort: never blocks or fails the email / user submission.
+const LEAD_PIPE_URL = process.env.LEAD_PIPE_URL || 'https://love-rescue-api-production.up.railway.app/api/leads';
+const LEAD_PRACTICE_KEY = process.env.LEAD_PRACTICE_KEY || 'agile-counseling';
+
+async function forwardToLeadPipe(lead) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 4000);
+  try {
+    await fetch(LEAD_PIPE_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ practiceKey: LEAD_PRACTICE_KEY, ...lead }),
+      signal: controller.signal,
+    });
+  } catch (err) {
+    console.error('[LEAD PIPE] forward failed:', err.message);
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', 'https://agilecounseling.com');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -55,7 +78,7 @@ export default async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
-  const { firstName, lastName, email, phone, concern, ageGroup, preferredContact, message, fax_number, _timestamp } = req.body;
+  const { firstName, lastName, email, phone, concern, ageGroup, preferredContact, message, fax_number, _timestamp, source, channel, pageUrl } = req.body;
 
   // === SPAM CHECK ===
   const spamReason = looksLikeSpam({ firstName, lastName, fax_number, _timestamp });
@@ -93,16 +116,25 @@ export default async function handler(req, res) {
   `;
 
   try {
-    // Send notification to Candice
-    const sent = await sendEmail({
-      to: SITE_EMAIL,
-      from: FROM_EMAIL,
-      fromName: `${firstName} ${lastName} via Agile Counseling`,
-      subject: `New Appointment Request: ${firstName} ${lastName}${concern ? ` - ${concern}` : ''}`,
-      html: emailHtml,
-      replyTo: email,
-      cc: 'bryce@gullstack.com',
-    });
+    // Send Candice's email (critical path) and forward the lead to the Love
+    // Rescue console (best-effort) in parallel. The forward never rejects.
+    const [sent] = await Promise.all([
+      sendEmail({
+        to: SITE_EMAIL,
+        from: FROM_EMAIL,
+        fromName: `${firstName} ${lastName} via Agile Counseling`,
+        subject: `New Appointment Request: ${firstName} ${lastName}${concern ? ` - ${concern}` : ''}`,
+        html: emailHtml,
+        replyTo: email,
+        cc: 'bryce@gullstack.com',
+      }),
+      forwardToLeadPipe({
+        firstName, lastName, email, phone, concern, ageGroup, preferredContact, message,
+        source: source || 'website',
+        channel: channel || undefined,
+        pageUrl: pageUrl || undefined,
+      }),
+    ]);
 
     if (!sent) {
       console.error('SendGrid delivery failed');

@@ -282,18 +282,36 @@ description: Schedule your therapy appointment at Agile Counseling in Sandy, UT.
 </section>
 
 <script>
+// Detect which marketing channel this visitor came from (for the practice's
+// lead funnel). Prefers a utm_source param, falls back to the referrer.
+function detectLeadChannel() {
+  var params = new URLSearchParams(window.location.search || '');
+  var utmSource = (params.get('utm_source') || '').toLowerCase();
+  var ref = '';
+  try { ref = (document.referrer || '').toLowerCase(); } catch (e) {}
+  var hay = utmSource + ' ' + ref;
+  var channel = 'website';
+  if (/psych(ology)?today/.test(hay)) channel = 'psychtoday';
+  else if (/google|bing|duckduckgo|search|yahoo/.test(hay)) channel = 'google';
+  else if (utmSource && /refer|partner/.test(hay)) channel = 'referral';
+  var source = utmSource;
+  if (!source && ref) { try { source = new URL(document.referrer).hostname.replace(/^www\./, ''); } catch (e) {} }
+  return { channel: channel, source: source || 'direct' };
+}
+
 document.getElementById('contactForm').addEventListener('submit', async function(e) {
   e.preventDefault();
-  
+
   const form = e.target;
   const submitBtn = form.querySelector('button[type="submit"]');
   const originalText = submitBtn.textContent;
-  
+
   // Disable button and show loading
   submitBtn.disabled = true;
   submitBtn.textContent = 'Sending...';
-  
+
   // Gather form data
+  const lead = detectLeadChannel();
   const formData = {
     firstName: form.firstName.value,
     lastName: form.lastName.value,
@@ -304,7 +322,10 @@ document.getElementById('contactForm').addEventListener('submit', async function
     preferredContact: form.preferredContact.value,
     message: form.message.value,
     fax_number: form.fax_number.value,
-    _timestamp: form._timestamp.value
+    _timestamp: form._timestamp.value,
+    source: lead.source,
+    channel: lead.channel,
+    pageUrl: window.location.href
   };
   
   try {
