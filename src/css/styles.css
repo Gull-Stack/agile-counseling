@@ -1298,6 +1298,14 @@ p {
   color: var(--color-secondary);
 }
 
+/* Breadcrumbs inside the navy gradient hero (#1c3d5a → #2a5a82): pale blue passes 5.4:1 across the whole gradient */
+.page-hero .breadcrumb span {
+  color: #bfe3f7;
+}
+.page-hero .breadcrumb a:hover {
+  color: #ffffff;
+}
+
 .service-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
