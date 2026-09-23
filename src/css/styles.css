@@ -10,12 +10,15 @@
   --color-primary: #1c3d5a;
   --color-primary-dark: #142d42;
   --color-primary-light: #2a5a82;
-  --color-secondary: #4a90c4;
-  --color-secondary-dark: #3a7aae;
+  /* a11y: #4a90c4 -> #2e72a3 so text/buttons on light backgrounds reach 4.5:1.
+     The bright brand blue stays for text on dark navy via --color-secondary-bright. */
+  --color-secondary: #2e72a3;
+  --color-secondary-dark: #235a82;
+  --color-secondary-bright: #6bb5e0;
   --color-accent: #6bb5e0;
   --color-text: #333333;
   --color-text-light: #666666;
-  --color-text-muted: #999999;
+  --color-text-muted: #6e6e6e;
   --color-white: #ffffff;
   --color-light-bg: #f0f5fa;
   --color-gray-100: #f5f5f5;
@@ -171,7 +174,7 @@ p {
 }
 
 .section-label.light {
-  color: var(--color-secondary);
+  color: var(--color-secondary-bright);
 }
 
 .section-subtitle {
@@ -309,7 +312,7 @@ p {
 }
 
 .top-bar-left a:hover {
-  color: var(--color-secondary);
+  color: var(--color-secondary-bright);
 }
 
 .top-bar-left .divider {
@@ -333,7 +336,7 @@ p {
 }
 
 .top-bar-right a:hover {
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary-bright);
   color: var(--color-primary);
 }
 
@@ -549,7 +552,7 @@ p {
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: var(--color-secondary);
+  color: var(--color-secondary-bright);
   font-weight: 500;
   margin-bottom: var(--spacing-sm);
 }
@@ -581,7 +584,7 @@ p {
 }
 
 .trust-item i {
-  color: var(--color-secondary);
+  color: var(--color-secondary-bright);
   font-size: 1.25rem;
 }
 
@@ -609,7 +612,7 @@ p {
   bottom: -20px;
   right: -20px;
   background-color: var(--color-secondary);
-  color: var(--color-primary);
+  color: var(--color-white);
   padding: var(--spacing-md);
   border-radius: var(--radius-lg);
   text-align: center;
@@ -1124,7 +1127,7 @@ p {
 }
 
 .footer-social a:hover {
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary-bright);
   color: var(--color-primary);
 }
 
@@ -1150,7 +1153,7 @@ p {
 }
 
 .footer-links ul li a:hover {
-  color: var(--color-secondary);
+  color: var(--color-secondary-bright);
   padding-left: 0.5rem;
 }
 
@@ -1167,7 +1170,7 @@ p {
 }
 
 .footer-contact address i {
-  color: var(--color-secondary);
+  color: var(--color-secondary-bright);
   margin-top: 0.25rem;
 }
 
@@ -1176,7 +1179,7 @@ p {
 }
 
 .footer-contact address a:hover {
-  color: var(--color-secondary);
+  color: var(--color-secondary-bright);
 }
 
 .footer-hours {
@@ -1217,7 +1220,7 @@ p {
 }
 
 .footer-legal li a:hover {
-  color: var(--color-secondary);
+  color: var(--color-secondary-bright);
 }
 
 .disclaimer {
@@ -1835,4 +1838,14 @@ p {
   .logo-img {
     height: 40px;
   }
+}
+
+/* ============================================
+   Accessibility (WCAG 2.1 AA)
+   ============================================ */
+/* Links inside running text must not rely on color alone. */
+p a:not([class*="btn"]),
+.breadcrumb a[href] {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }

@@ -59,7 +59,7 @@
 }
 
 .section-subtitle {
-    color: #64748b;
+    color: #5f6b7d;
     text-align: center;
     max-width: 700px;
     margin: 0 auto 3rem;
@@ -93,7 +93,7 @@
 }
 
 .service-card p {
-    color: #64748b;
+    color: #5f6b7d;
     line-height: 1.7;
 }
 
@@ -129,7 +129,7 @@
 }
 
 .feature-item p {
-    color: #64748b;
+    color: #5f6b7d;
     font-size: 0.95rem;
 }
 
@@ -195,7 +195,7 @@
 
 .btn-primary {
     display: inline-block;
-    background: #4a9b8c;
+    background: #357a6e; /* a11y: was #4a9b8c (3.3:1 with white) */
     color: white;
     padding: 1rem 2.5rem;
     border-radius: 50px;
@@ -206,7 +206,7 @@
 }
 
 .btn-primary:hover {
-    background: #3d8577;
+    background: #2d6b5f; /* a11y: was #3d8577 */
     transform: translateY(-2px);
 }
 
@@ -258,7 +258,7 @@
 }
 
 .breadcrumb span {
-    color: #64748b;
+    color: #5f6b7d;
 }
 
 /* Schema/FAQ */
@@ -416,4 +416,21 @@
         font-size: 0.8rem;
         padding: 0.75rem 0;
     }
+}
+
+/* a11y: .btn-secondary is a white outline button made for the dark CTA band.
+   Outside that band it sat on a light background (1.04:1). Use navy there. */
+section:not(.cta-section) .btn-secondary {
+    color: #1a365d;
+    border-color: #1a365d;
+}
+section:not(.cta-section) .btn-secondary:hover {
+    background: #1a365d;
+    color: #ffffff;
+}
+
+/* a11y: breadcrumb links must not rely on color alone */
+.breadcrumb a[href] {
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
