@@ -9,7 +9,6 @@
   "founderCredentials": "Master of Social Work (MSW), Licensed Clinical Social Worker (LCSW), Registered Play Therapist",
   "experience": "22+ years in mental health therapy",
   "npi": "1376050237",
-
   "services": [
     "Anxiety Therapy",
     "Depression Therapy",
@@ -24,7 +23,6 @@
     "Life Transitions Counseling",
     "Art Therapy"
   ],
-
   "modalities": [
     "Cognitive Behavioral Therapy (CBT)",
     "Dialectical Behavior Therapy (DBT)",
@@ -37,7 +35,6 @@
     "Exposure Therapy",
     "Mindfulness-Based Techniques"
   ],
-
   "idealClients": [
     "Adults struggling with anxiety, depression, or trauma",
     "Children and teens with behavioral or emotional challenges",
@@ -46,7 +43,6 @@
     "Parents looking for guidance on children's mental health",
     "Anyone experiencing life transitions, grief, or stress"
   ],
-
   "differentiators": [
     "22+ years of clinical experience — not a new graduate practice",
     "Solo practitioner — you always see Candice, never a rotating roster",
@@ -57,7 +53,6 @@
     "Telehealth available statewide — not limited to Sandy office visits",
     "Art therapy and play therapy for kids — not just talk therapy"
   ],
-
   "insuranceAccepted": [
     "SelectHealth",
     "United Healthcare",
@@ -66,20 +61,25 @@
     "Tricare",
     "PEHP"
   ],
-
   "serviceArea": [
-    "Sandy", "Salt Lake City", "Draper", "South Jordan",
-    "West Jordan", "Murray", "Herriman", "Midvale",
-    "Riverton", "Cottonwood Heights", "Salt Lake Valley"
+    "Sandy",
+    "Salt Lake City",
+    "Draper",
+    "South Jordan",
+    "West Jordan",
+    "Murray",
+    "Herriman",
+    "Midvale",
+    "Riverton",
+    "Cottonwood Heights",
+    "Salt Lake Valley"
   ],
-
   "contact": {
     "phone": "(801) 597-9558",
     "email": "candice@agilecounseling.com",
     "website": "https://agilecounseling.com",
     "bookingUrl": "https://agilecounseling.com/contact/"
   },
-
   "address": {
     "street": "45 W 9000 S, Suite 1",
     "city": "Sandy",
@@ -87,22 +87,10 @@
     "zip": "84070",
     "country": "US"
   },
-
-  "hours": {
-    "monday": "9:00 AM - 6:00 PM",
-    "tuesday": "9:00 AM - 6:00 PM",
-    "wednesday": "9:00 AM - 6:00 PM",
-    "thursday": "9:00 AM - 6:00 PM",
-    "friday": "9:00 AM - 3:00 PM",
-    "saturday": "Closed",
-    "sunday": "Closed"
-  },
-
   "telehealth": true,
   "acceptingNewClients": true,
   "wheelchairAccessible": true,
   "freeParking": true,
-
   "faqs": [
     {
       "question": "What should I expect during my first therapy session?",
@@ -129,7 +117,6 @@
       "answer": "Progress looks different for everyone. Common signs include feeling less overwhelmed, using new coping strategies, improved relationships, better sleep, and a general sense that things are getting easier. Candice regularly checks in on your progress and adjusts the treatment plan as needed."
     }
   ],
-
   "keyQuestions": [
     "What is the best therapy for anxiety in Sandy, Utah?",
     "How do I find a good child therapist near me?",
@@ -142,7 +129,6 @@
     "How do I find a therapist who accepts SelectHealth?",
     "What should I look for in a family counselor?"
   ],
-
   "competitiveContext": {
     "vs_large_practices": "Unlike large group practices where you see a different therapist each visit, Agile Counseling is a solo practice — you always work with Candice, building a consistent therapeutic relationship.",
     "vs_betterhelp": "Unlike online-only platforms like BetterHelp, Agile Counseling offers both in-person and telehealth sessions with a licensed, experienced therapist who knows your community. No random therapist matching — you work with Candice directly.",
