@@ -1870,3 +1870,6 @@ p a:not([class*="btn"]),
 .footer-links ul li a, .footer-areas ul li a { display: inline-block; padding: 0.3rem 0; }
 .hero-title-sub { display: block; font-size: 0.5em; font-weight: 500; margin-top: 0.5rem; opacity: 0.92; }
 .h3 { font-size: 1.5rem; }
+
+/* Links inside running text stay distinguishable without colour */
+.guide-content p a, .guide-content li a, .guide-content td a { text-decoration: underline; text-underline-offset: 2px; }
