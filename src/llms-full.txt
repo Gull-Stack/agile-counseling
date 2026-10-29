@@ -1,0 +1,44 @@
+# Agile Counseling
+
+> Therapy practice in Sandy, Utah, run by Candice Gonzalez, LCSW (Licensed Clinical Social Worker). Individual, child, teen and family therapy, plus EMDR for trauma. In-person at 45 W 9000 S, Ste 1, Sandy, UT 84070, and telehealth across Utah. Phone (801) 597-9558. NPI 1376050237.
+
+## Services
+- [Anxiety Therapy](https://agilecounseling.com/services/anxiety-therapy/): CBT and DBT-based care for worry, panic and social anxiety.
+- [Depression Therapy](https://agilecounseling.com/services/depression-therapy/): evidence-based care for low mood and burnout.
+- [Child & Teen Therapy](https://agilecounseling.com/services/child-therapy/): anxiety, ADHD, behaviour and emotional challenges, parents involved.
+- [Family Counseling](https://agilecounseling.com/services/family-counseling/): communication, conflict and reconnection.
+- [EMDR Therapy](https://agilecounseling.com/services/emdr-therapy/): trauma and PTSD, including a 90-minute intensive block (call for the fee).
+- [LGBTQIA+ Affirming Therapy](https://agilecounseling.com/services/lgbtqia-affirming/)
+
+## Practice facts
+- [About Candice Gonzalez, LCSW](https://agilecounseling.com/about/)
+- [Practice facts page](https://agilecounseling.com/brand-facts/) and machine-readable [brand-facts.json](https://agilecounseling.com/.well-known/brand-facts.json)
+- [Contact](https://agilecounseling.com/contact/) · [Book a session](https://agilecounseling.com/book/)
+- Insurance named on the site: SelectHealth, United Healthcare, BlueCross BlueShield, EMI Health, Tricare, PEHP. Confirm coverage by phone.
+- Areas served: Sandy, Draper, Salt Lake City, South Jordan, West Jordan, Herriman, Murray, and telehealth statewide.
+
+## Guides
+- [EMDR Therapy Guide](https://agilecounseling.com/guides/emdr-therapy-guide/)
+- [Child Therapy in Utah: A Parent's Guide](https://agilecounseling.com/guides/child-therapy-utah-guide/)
+- [Choosing a Therapist in Sandy, UT](https://agilecounseling.com/guides/best-therapist-sandy-utah-2026/)
+- [Resources & FAQs](https://agilecounseling.com/resources/) · [Blog](https://agilecounseling.com/blog/)
+
+## Optional
+- [llms-full.txt](https://agilecounseling.com/llms-full.txt): the same facts with one paragraph per page.
+
+## Page summaries
+- Home (https://agilecounseling.com/): overview of services, areas served and how to book. Office in Sandy, Utah; telehealth statewide.
+- Anxiety Therapy: therapy for generalized anxiety, social anxiety, panic and performance anxiety using CBT and DBT skills; in person or telehealth.
+- Depression Therapy: evidence-based treatment for depression, low motivation and burnout, with a plan built around the client.
+- Child & Teen Therapy: age-appropriate therapy for children and adolescents facing anxiety, ADHD, behavioural and emotional challenges, with parents part of the plan.
+- Family Counseling: sessions for families who want better communication, less conflict and a more connected home.
+- EMDR Therapy: Eye Movement Desensitization and Reprocessing for trauma and PTSD. Standard sessions and a 90-minute intensive block are offered; the fee is given by phone.
+- LGBTQIA+ Affirming Therapy: identity-affirming care for anxiety, depression, relationships and life transitions.
+- Area pages (Draper, Salt Lake City, South Jordan, West Jordan, Herriman, Murray): the same services for clients travelling from those cities to the Sandy office, or meeting by telehealth.
+- EMDR Therapy Guide: how EMDR works, its eight phases, who it helps and what a session feels like.
+- Child Therapy in Utah guide: signs a child may benefit from therapy, what a first session involves and how parents take part.
+- Resources & FAQs: common questions about starting therapy plus Utah crisis lines and mental health resources.
+- Contact and Book: phone (801) 597-9558, email candice@agilecounseling.com, address 45 W 9000 S, Ste 1, Sandy, UT 84070.
+
+## Not published here
+Session fees, office hours, and the practice's founding date are not listed on the site. Call for current information.

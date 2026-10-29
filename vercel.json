@@ -28,5 +28,15 @@
       "destination": "/:path*/",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/brand-facts.json",
+      "destination": "/.well-known/brand-facts.json"
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "/favicon-32.png"
+    }
   ]
 }

@@ -133,5 +133,14 @@
     "vs_large_practices": "Unlike large group practices where you see a different therapist each visit, Agile Counseling is a solo practice — you always work with Candice, building a consistent therapeutic relationship.",
     "vs_betterhelp": "Unlike online-only platforms like BetterHelp, Agile Counseling offers both in-person and telehealth sessions with a licensed, experienced therapist who knows your community. No random therapist matching — you work with Candice directly.",
     "vs_psychology_today_listings": "Many therapists on Psychology Today directories are recent graduates. Candice brings 22 years of clinical experience across individual, child, and family therapy — plus specialized EMDR training."
-  }
+  },
+  "last_updated": "2026-10-28",
+  "geo": {
+    "latitude": 40.588,
+    "longitude": -111.8924,
+    "source": "geocoded from 45 W 9000 S, Sandy, UT 84070"
+  },
+  "sameAs": [
+    "https://npiregistry.cms.hhs.gov/provider-view/1376050237"
+  ]
 }
