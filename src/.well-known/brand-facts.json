@@ -2,7 +2,7 @@
   "name": "Agile Counseling",
   "legalName": "Agile Counseling LLC",
   "url": "https://agilecounseling.com",
-  "type": "LocalBusiness",
+  "type": "CounselingService",
   "industry": "Mental Health / Therapy",
   "founded": "2013",
   "founder": "Candice Gonzalez, LCSW",
@@ -78,7 +78,7 @@
     "phone": "(801) 597-9558",
     "email": "candice@agilecounseling.com",
     "website": "https://agilecounseling.com",
-    "bookingUrl": "https://agilecounseling.com/contact/"
+    "bookingUrl": "https://agilecounseling.com/book/"
   },
   "address": {
     "street": "45 W 9000 S, Suite 1",

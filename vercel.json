@@ -38,5 +38,6 @@
       "source": "/favicon.ico",
       "destination": "/favicon-32.png"
     }
-  ]
+  ],
+  "trailingSlash": true
 }
