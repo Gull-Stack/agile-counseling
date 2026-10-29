@@ -1,3 +1,8 @@
+/* Brand type, matching styles.css */
+:root { --font-heading: 'Playfair Display', Georgia, serif; --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+body { font-family: var(--font-body); }
+h1, h2, h3, h4, h5, h6, .h3, .h4 { font-family: var(--font-heading); }
+
 /* Location & Service Page Styles for Agile Counseling */
 
 /* Hero Section */
