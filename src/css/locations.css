@@ -122,7 +122,8 @@
     font-size: 1.8rem;
 }
 
-.feature-item h4 {
+.feature-item h4,
+.feature-item .h4 {
     color: #1a365d;
     margin-bottom: 0.75rem;
     font-size: 1.2rem;
@@ -361,7 +362,7 @@
         font-size: 1.4rem;
     }
     
-    .feature-item h4 {
+    .feature-item h4, .feature-item .h4 {
         font-size: 1.05rem;
     }
     

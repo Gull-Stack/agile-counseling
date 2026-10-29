@@ -1132,7 +1132,9 @@ p {
 
 .footer-links h3,
 .footer-links h4,
-.footer-contact h4 {
+.footer-links .h4,
+.footer-contact h4,
+.footer-contact .h4 {
   color: var(--color-white);
   font-family: var(--font-body);
   font-size: 1rem;
@@ -1734,7 +1736,8 @@ p {
   font-size: 1.25rem;
 }
 
-.detail-content h4 {
+.detail-content h4,
+.detail-content .h4 {
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 600;
