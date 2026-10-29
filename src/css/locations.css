@@ -440,3 +440,11 @@ section:not(.cta-section) .btn-secondary:hover {
     text-decoration: underline;
     text-underline-offset: 2px;
 }
+
+/* Outbound links block above the page footer */
+.site-links { background: #f4f7fb; padding: 2.5rem 0; border-top: 1px solid #e5e7eb; }
+.site-links-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
+.site-links-h { font-family: var(--font-heading); font-size: 1.1rem; color: #1a365d; margin: 0 0 0.75rem; }
+.site-links ul { list-style: none; margin: 0; padding: 0; }
+.site-links li a { display: inline-block; padding: 0.3rem 0; color: #2c5282; text-decoration: none; }
+.site-links li a:hover { text-decoration: underline; }
