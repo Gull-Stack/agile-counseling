@@ -29,6 +29,10 @@ description: "A plain-language guide to EMDR therapy: how it works, the eight ph
   .phase-card h4 { color: var(--color-primary); margin: 0.5rem 0; font-size: 1rem; }
   .phase-card p { font-size: 0.9rem; color: var(--color-text-light); margin: 0; }
   @media (max-width: 768px) { .guide-header h1 { font-size: 2rem; } }
+  .faq-item { border-bottom: 1px solid #e5e7eb; }
+  .faq-item summary { font-weight: 600; color: var(--color-primary); cursor: pointer; padding: 0.9rem 0; font-size: 1.05rem; }
+  .faq-item p { padding: 0 0 1rem 1rem; border-left: 3px solid var(--color-secondary); margin: 0 0 1rem; }
+  .guide-callout ul { margin: 0.5rem 0 0; padding-left: 1.25rem; }
 </style>
 
 <div class="guide-header">
@@ -44,6 +48,16 @@ description: "A plain-language guide to EMDR therapy: how it works, the eight ph
 <div class="guide-content">
   <div class="container">
     <div style="max-width:800px; margin:0 auto;">
+      <div class="guide-callout">
+        <p>Key takeaways</p>
+        <ul>
+          <li>EMDR treats the memory behind the symptom rather than talking around it, and you do not have to describe the whole event out loud.</li>
+          <li>It follows eight structured phases; the first sessions are preparation, not processing.</li>
+          <li>It is recommended for PTSD by the American Psychological Association, the World Health Organization and the U.S. Department of Veterans Affairs.</li>
+          <li>Agile Counseling offers standard EMDR sessions and a 90-minute intensive block in Sandy, Utah.</li>
+        </ul>
+      </div>
+
 
       <h2>What Is EMDR Therapy?</h2>
       <p>EMDR (Eye Movement Desensitization and Reprocessing) is an evidence-based psychotherapy developed by Francine Shapiro in 1987. It was originally designed to treat Post-Traumatic Stress Disorder (PTSD), but has since proven effective for a wide range of mental health conditions.</p>
@@ -149,6 +163,13 @@ description: "A plain-language guide to EMDR therapy: how it works, the eight ph
         <li><strong>Comprehensive approach:</strong> The best EMDR therapists combine it with other modalities as needed</li>
       </ul>
 
+      <h2>Frequently asked questions</h2>
+      <details class="faq-item"><summary>Is EMDR therapy effective?</summary><p>Yes. EMDR is recognised as an effective treatment for PTSD by the American Psychological Association, the World Health Organization and the U.S. Department of Veterans Affairs, and controlled studies support its use for trauma-related symptoms.</p></details>
+      <details class="faq-item"><summary>Do I have to talk about the trauma in detail?</summary><p>No. EMDR works with the memory as you hold it in mind, not with a full retelling. You can process a memory without describing every detail to the therapist.</p></details>
+      <details class="faq-item"><summary>How long does EMDR take?</summary><p>It depends on the number and complexity of the memories. A single-incident trauma can resolve in a handful of processing sessions; complex or repeated trauma takes longer. The first sessions are history and preparation.</p></details>
+      <details class="faq-item"><summary>What is a 90-minute EMDR intensive?</summary><p>A longer block that gives enough time to open a memory, work through it and close the session with you settled. Agile Counseling offers 90-minute intensives in Sandy; the fee is given by phone.</p></details>
+      <details class="faq-item"><summary>Is EMDR available by telehealth?</summary><p>Yes, EMDR can be done by secure video using on-screen bilateral stimulation. Some clients prefer to start in person and move to telehealth once they are comfortable with the process.</p></details>
+
       <h2>EMDR Therapy in Sandy, Utah</h2>
       <p>If you're looking for EMDR therapy in the Salt Lake Valley, Agile Counseling in Sandy, Utah offers specialized EMDR treatment from Candice Gonzalez, LCSW. With over 22 years of clinical experience, Candice combines EMDR with CBT, DBT, and other evidence-based approaches to create comprehensive treatment plans.</p>
       <p>Agile Counseling accepts SelectHealth, United Healthcare, BlueCross BlueShield, EMI Health, Tricare, and PEHP. Both in-person and telehealth sessions are available for clients throughout Utah. Candice also offers a 90-minute EMDR intensive block. The fee is not listed online. Call to ask about the price.</p>
@@ -158,3 +179,52 @@ description: "A plain-language guide to EMDR therapy: how it works, the eight ph
     </div>
   </div>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is EMDR therapy effective?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. EMDR is recognised as an effective treatment for PTSD by the American Psychological Association, the World Health Organization and the U.S. Department of Veterans Affairs, and controlled studies support its use for trauma-related symptoms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to talk about the trauma in detail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. EMDR works with the memory as you hold it in mind, not with a full retelling. You can process a memory without describing every detail to the therapist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does EMDR take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the number and complexity of the memories. A single-incident trauma can resolve in a handful of processing sessions; complex or repeated trauma takes longer. The first sessions are history and preparation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a 90-minute EMDR intensive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A longer block that gives enough time to open a memory, work through it and close the session with you settled. Agile Counseling offers 90-minute intensives in Sandy; the fee is given by phone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is EMDR available by telehealth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, EMDR can be done by secure video using on-screen bilateral stimulation. Some clients prefer to start in person and move to telehealth once they are comfortable with the process."
+      }
+    }
+  ]
+}
+</script>
